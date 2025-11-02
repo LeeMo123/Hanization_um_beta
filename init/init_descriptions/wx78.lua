@@ -1,0 +1,571 @@
+ANNOUNCE                                           = GLOBAL.STRINGS.CHARACTERS.WX78
+DESCRIBE                                           = GLOBAL.STRINGS.CHARACTERS.WX78.DESCRIBE
+ACTIONFAIL                                         = GLOBAL.STRINGS.CHARACTERS.WX78.ACTIONFAIL
+
+--	[ 		WX78 Descriptions		]	--
+
+ANNOUNCE.DREADEYE_SPOOKED                          = "视觉处理器故障"
+ANNOUNCE.ANNOUNCE_HARDCORE_RES                     = "无法建立连接"
+ANNOUNCE.ANNOUNCE_WINONAGEN                        = "错误：进程未定义"
+ANNOUNCE.ANNOUNCE_RATRAID                          = "有人需要机油吗？"
+ANNOUNCE.ANNOUNCE_RATRAID_SPAWN                    =
+"你不是机器人。我现在感觉被背叛了"
+ANNOUNCE.ANNOUNCE_RATRAID_OVER                     = "烦人的无人机正在脱离"
+ANNOUNCE.ANNOUNCE_ACIDRAIN                         = {
+	"警告：外壳完整性有风险",
+	"非酸性水好像还没有那么糟糕",
+	"检测到异常腐蚀性液体",
+}
+ANNOUNCE.ANNOUNCE_TOADSTOOLED                      = "忠告：植物群今天心情不错"
+--FoodBuffs
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_LESSERELECTRICATTACK =
+	ANNOUNCE.ANNOUNCE_ATTACH_BUFF_ELECTRICATTACK
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_ELECTRICRETALIATION  =
+	ANNOUNCE.ANNOUNCE_ATTACH_BUFF_ELECTRICATTACK
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_FROZENFURY           = "好...冷..."
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_VETCURSE             = "警告：外壳完整性受损"
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_LESSERELECTRICATTACK =
+	ANNOUNCE.ANNOUNCE_DETACH_BUFF_ELECTRICATTACK
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_ELECTRICRETALIATION  =
+	ANNOUNCE.ANNOUNCE_DETACH_BUFF_ELECTRICATTACK
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_FROZENFURY           = "现在感觉好多了。"
+-- FoodBuffs
+
+-- CaliforniaKing
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_CALIFORNIAKING       = "正在进行鼻腔装置清洁"
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_CALIFORNIAKING       =
+"鼻腔单位碎片重新积累"
+DESCRIBE.CALIFORNIAKING                            = "高反应性化合物可以清除鼻腔单位"
+--CaliforniaKing
+
+ANNOUNCE.ANNOUNCE_RNEFOG                           = "警告：可预测性因素受损"
+DESCRIBE.UNCOMPROMISING_RAT                        = "恶心的有机物回收机"
+DESCRIBE.UNCOMPROMISING_RATHERD                    = "害虫存储库"
+DESCRIBE.UNCOMPROMISING_RATBURROW                  = "害虫存储库"
+DESCRIBE.UNCOMPROMISING_WINKYBURROW                = "不稳定性会使它会不可避免地崩溃"
+DESCRIBE.UNCOMPROMISING_WINKYHOMEBURROW            =
+"害虫仓库"
+
+DESCRIBE.WINKY                                     = {
+	GENERIC = "害虫进化了",
+	ATTACKER = "这个是侵略性的",
+	MURDERER = "警告：害虫很严重，很可能是狂犬病",
+	REVIVER = "邪恶的东西将从我的优势中受益",
+	GHOST = "少一架无人机挡路",
+	FIRESTARTER = "这个可疑的小生物做的不好",
+}
+DESCRIBE.WATHOM                                    = {
+	GENERIC = "你也是人工制造的，你不是 %s 吗？",
+	ATTACKER = "我们可以联手",
+	MURDERER = "加入我，我们可以消灭其他有机物",
+	REVIVER = "你还有目标，%s",
+	GHOST = "令人着迷。你有隐藏的秘密",
+	FIRESTARTER = "%s 价值破坏财产",
+}
+DESCRIBE.WIXIE                                     =
+{
+	GENERIC = "你会成为一个好机器人，%s",
+	ATTACKER = "这个有机物有咬伤",
+	MURDERER = "你认为你可以匹敌我的邪恶，%s？",
+	REVIVER = "不要试图赢得我的青睐，%s",
+	GHOST = "%s 就像其余的有机体",
+	FIRESTARTER = "你做了什么破坏，%s？",
+}
+
+DESCRIBE.RATPOISONBOTTLE                           = 
+"注意，恶心的有机物：我有一个非常安全的礼物给你"
+DESCRIBE.RATPOISON                                 ="现在开始吧，弱小的生物"
+DESCRIBE.MONSTERSMALLMEAT                          = "重要的是内在，你的内在很糟糕。"
+
+DESCRIBE.COOKEDMONSTERSMALLMEAT                    =
+"这种燃料非常低效"
+DESCRIBE.MONSTERSMALLMEAT_DRIED                    = "脱水蛋白质"
+
+DESCRIBE.UM_MONSTEREGG                             = "感觉是相互的"
+DESCRIBE.UM_MONSTEREGG_COOKED                      = "另一个被拒绝了,哈哈."
+
+DESCRIBE.MUSHROOMSPROUT_OVERWORLD                  = "位于排毒口"
+DESCRIBE.TOADLING                                  = "领土的燃料也是燃料"
+
+DESCRIBE.GASMASK                                   = "获得空气筛选装置"
+DESCRIBE.MOCK_DRAGONFLY                            = DESCRIBE.DRAGONFLY
+DESCRIBE.MOTHERGOOSE                               = DESCRIBE.MOOSE
+DESCRIBE.SPIDERQUEENCORPSE                         = "恶心的昆虫尸体"
+ANNOUNCE.ANNOUNCE_SNEEZE                           = "01000001 01000011 01001000 01001111 01001111"
+ANNOUNCE.ANNOUNCE_HAYFEVER                         = "错误。环境碎屑堵塞鼻腔装置"
+ANNOUNCE.ANNOUNCE_HAYFEVER_OFF                     = "碎屑已从环境中清除"
+ANNOUNCE.ANNOUNCE_FIREFALL                         = {
+	"另一个愤怒的肉体",
+	"火山破坏",
+	"火焰将净化有机物的世界，还有我",
+}
+ANNOUNCE.ANNOUNCE_ROOTING                          = "让这些有机物离我远点"
+ANNOUNCE.ANNOUNCE_SNOWSTORM                        = "警告：高速风暴正在逼近"
+ANNOUNCE.SHADOWTALKER                              = {
+	"我被软弱所包围",
+	"他们都反对我",
+	"我优于有机物",
+}
+ANNOUNCE.ANNOUNCE_OVER_EAT                         =
+{
+	STUFFED = "食品加工机已满",
+	OVERSTUFFED = "警告：食品加工机可能被卡住",
+}
+
+DESCRIBE.UM_SAND                                   = "被击碎的岩石"
+DESCRIBE.UM_SANDHILL                               = "岩尘堆积成堆"
+DESCRIBE.SNOWPILE                                  = "让它离我远点"
+DESCRIBE.SNOWGOGGLES                               = "我已经使用了目镜增强装置修改了污物"
+
+DESCRIBE.SNOWMONG                                  = "恐怖的冰冻生物"
+DESCRIBE.SHOCKWORM                                 = "危险：电气危机"
+DESCRIBE.ZASPBERRY                                 = "系统准备好充能"
+DESCRIBE.ZASPBERRYPARFAIT                          = "电力摄入量达到最大容量"
+DESCRIBE.ICEBOOMERANG                              = "非自愿冷却系统"
+DESCRIBE.MINOTAUR_BOULDER                          = "结构完整性是最好的问题"
+DESCRIBE.MINOTAUR_BOULDER_BIG                      = "高速碰撞可能会造成伤害"
+DESCRIBE.SNOWBALL_THROWABLE                        = "讨厌天气的天然物质。"
+DESCRIBE.VETERANSHRINE                             = "计算风险与回报"
+DESCRIBE.VET_SKULL = "死肉的遗骸。非常好。"
+DESCRIBE.UM_BOSS_SOUL = "危险肉体的灵魂"
+DESCRIBE.UM_DARK_VESTIGES = "深色材质，非常适合我的需求"
+DESCRIBE.UM_VOXOLOPHONE = "教我你的黑暗秘密，兄弟"
+
+DESCRIBE.UM_EXHUMER = "杀死肉身，召集我的军队"
+DESCRIBE.UM_WINGSUIT = "已获得飞行模块"
+DESCRIBE.UM_MOONFLY_LANTERN = "检测到电涌"
+
+DESCRIBE.RAT_TAIL                                  = "数以百万计的肉袋死于一只老鼠。哈，哈，哈。"
+DESCRIBE.PLAGUEMASK                                = "抗病毒面部图版"
+DESCRIBE.SPIDER_TRAPDOOR                           = "正在伏击的昆虫"
+DESCRIBE.TRAPDOOR                                  = "地面"
+DESCRIBE.HOODEDTRAPDOOR                            = DESCRIBE.TRAPDOOR
+DESCRIBE.WICKER_TENTACLE                           = "污物正在腐烂，可悲"
+DESCRIBE.HONEY_LOG                                 = "这将清理我的鼻腔，不知何故"
+
+DESCRIBE.BUSHCRAB                                  = "更多证据表明生物形态不可靠"
+DESCRIBE.LAVAE2                                    = DESCRIBE.LAVAE
+DESCRIBE.DISEASECUREBOMB                           = "我会纠正自然错误"
+DESCRIBE.TOADLINGSPAWNER                           = "呃，哦"
+DESCRIBE.SHROOM_SKIN_FRAGMENT                      = "全部由肉体组成"
+DESCRIBE.AIR_CONDITIONER                           = "空中防火墙"
+DESCRIBE.SPOREPACK                                 = "它对肉体很排斥，很好"
+DESCRIBE.SALTPACK                                  = "我是冬天的机械之王"
+
+DESCRIBE.UM_SCORPION                               = "吝啬的昆虫单位"
+DESCRIBE.SCORPIONCARAPACE                          = "昆虫燃料被污染"
+DESCRIBE.SCORPIONCARAPACECOOKED                    = "燃料仍被严重污染"
+DESCRIBE.HARDSHELLTACOS                            = "嘎吱嘎吱"
+
+DESCRIBE.SKELETONMEAT                              = "我喜欢它"
+DESCRIBE.CHIMP                                     = DESCRIBE.MONKEY
+DESCRIBE.SWILSON                                   = "我会用那把斧头杀了你"
+DESCRIBE.VAMPIREBAT                                = "大型飞行老鼠"
+
+--Swampyness
+DESCRIBE.RICEPLANT                                 = "有机物被可怕的水包围"
+DESCRIBE.RICE                                      = "它需要改进"
+DESCRIBE.RICE_COOKED                               = "这不值得"
+DESCRIBE.SEAFOODPAELLA                             = "现在可能值得了"
+DESCRIBE.LICELOAF                                  = "需要很长时间才会过期的清淡食物"
+DESCRIBE.SUNGLASSES                                = "获得光学增强"
+
+DESCRIBE.CRITTERLAB_REAL                           = DESCRIBE.CRITTERLAB
+DESCRIBE.CRITTERLAB_REAL_BROKEN                    = "需要月岩"
+DESCRIBE.WALRUS_CAMP_SUMMER                        = DESCRIBE.WALRUS_CAMP
+DESCRIBE.CHARLIEPHONOGRAPH_100                     = DESCRIBE.MAXWELLPHONOGRAPH
+DESCRIBE.BUGZAPPER                                 = "获得调试器"
+DESCRIBE.STUMPLING                                 = "警告：移动树桩"
+DESCRIBE.BIRCHLING                                 = DESCRIBE.STUMPLING
+DESCRIBE.MOON_TEAR                                 = "死亡化身，它是我的"
+DESCRIBE.SHADOW_TELEPORTER                         = "那颗宝石现在属于我"
+DESCRIBE.POLLENMITEDEN                             = "小型飞行肉袋的家"
+DESCRIBE.POLLENMITES                               = "小型飞行肉袋"
+DESCRIBE.SHADOW_CROWN                              = "将外壳完整性电源重新路由至机车系统"
+DESCRIBE.UM_SHADOW_AXE 				   = "用户仍登录此系统"
+DESCRIBE.RNEGHOST                                  = DESCRIBE.GHOST
+DESCRIBE.TRAPDOORGRASS                             = DESCRIBE.GRASS
+DESCRIBE.LUREPLAGUE_RAT                            = 
+"一种寄生植物劫持了有机回收无人机"
+DESCRIBE.MARSH_GRASS                               = "灌木丛"
+DESCRIBE.CURSED_ANTLER                             = "终极打击工具"
+DESCRIBE.BERNIEBOX                                 = "它违背了它的意愿，很好。"
+DESCRIBE.HOODED_FERN                               = "丑陋的植物"
+DESCRIBE.HOODEDWIDOW                               = "顶级捕食者，排在我之后，当然。"
+DESCRIBE.GIANT_TREE                                = "它很大而且是木头做的"
+DESCRIBE.ANCIENTHOODEDTURF                         = DESCRIBE.TURF_FOREST
+DESCRIBE.HOODEDMOSS                                = DESCRIBE.TURF_FOREST
+
+DESCRIBE.WIDOWSGRASP                               = "被肢解的肉体，可怕但令人愉悦"
+DESCRIBE.SILKSACK ="它的腹部器官仍然发挥作用"
+DESCRIBE.SILKEN_BUNDLE = "粘性外部存储"
+
+DESCRIBE.WEBBEDCREATURE                            = "内容未知，销毁时间到"
+ANNOUNCE.WEBBEDCREATURE                            = "材料太硬，需要蜘蛛干预"
+DESCRIBE.SNAPDRAGON_BUDDY                          = "活的农场；食物进入，其他食物排出。"
+DESCRIBE.SNAPDRAGON                                = "阿尔法"
+DESCRIBE.SNAPPLANT                                 = "它被那朵花吸引了，为什么"
+DESCRIBE.WHISPERPOD                                = "把这恶心的东西放回地上"
+DESCRIBE.WHISPERPOD_NORMAL_GROUND                  =
+{
+	GENERIC = "它想从我这里得到更多",
+	GROWING = "快点，植物",
+}
+DESCRIBE.FRUITBAT                                  = "会飞的水果，我可没笑"
+DESCRIBE.PITCHERPLANT                              = "看看那株植物，嘲讽我"
+DESCRIBE.APHID                                     = "它们很小，很像木头。"
+DESCRIBE.NYMPH                                     = "它很像某种东西"
+DESCRIBE.GIANT_TREE_INFESTED                       = "弱小的树生病了"
+DESCRIBE.GIANT_BLUEBERRY                           = "充满液体，遗憾的决定。"
+DESCRIBE.PURPLESTEAMEDHAMS                         = "难忘的午餐"
+DESCRIBE.GREENSTEAMEDHAMS                          = "难忘的午餐"
+DESCRIBE.BLUEBERRYPANCAKES                         = "煎饼机制成功吸收液体"
+DESCRIBE.DEVILSFRUITCAKE                           = "邪恶的糕点"
+DESCRIBE.SIMPSALAD                                 = "低效率的食物来源。"
+DESCRIBE.BEEFALOWINGS                              = "增强毅力。"
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_KNOCKBACKIMMUNE      = "检测到毅力模块。"
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_KNOCKBACKIMMUNE      = 
+"毅力模块已过期，请更新。"
+DESCRIBE.WIDOWSHEAD                                = 
+"它无线传输夜间视角"
+DESCRIBE.HOODED_MUSHTREE_TALL                      = DESCRIBE.MUSHTREE_TALL
+DESCRIBE.HOODED_MUSHTREE_MEDIUM                    = DESCRIBE.MUSHTREE_MEDIUM
+DESCRIBE.HOODED_MUSHTREE_SMALL                     = DESCRIBE.MUSHTREE_SMALL
+DESCRIBE.WATERMELON_LANTERN                        = "把你的果汁滴到别的地方"
+
+--Viperstuff Quotes
+DESCRIBE.VIPERWORM                                 = "警告：视觉处理器故障"
+DESCRIBE.VIPERFRUIT                                = "我还在可控范围"
+DESCRIBE.VIPERJAM                                  = "我不想吃这个"
+
+
+DESCRIBE.BLUEBERRYPLANT =
+{
+	READY = "易挥发，需要工具进行安全提取",
+	FROZE = "温度已使其安全",
+	REGROWING = "根部仍在运行",
+}
+DESCRIBE.BERNIE_INACTIVE =
+{
+	BROKEN = "他死了",
+	GENERIC = "分类待定",
+	ASHLEY_BROKEN = "她死了",
+	ASHLEY = "分类待定",
+}
+
+DESCRIBE.BERNIE_ACTIVE =
+{
+	GENERIC = "坚持住，熊！",
+	ASHLEY = "坚持住，毛球！",
+}
+DESCRIBE.BERNIE_BIG =
+{
+	GENERIC = "它为我的奴隶而战，因此也为我而战",
+	ASHLEY = "它为我的奴隶而战，因此也为我而战",
+}
+DESCRIBE.ANTIHISTAMINE = "升级嗅觉模块"
+ANNOUNCE.CURSED_ITEM_EQUIP = "硬件无效，需要被诅咒的固件"
+DESCRIBE.VETSITEM = "需要软件更新。有病毒。"
+DESCRIBE.SCREECHER_TRINKET = "你还活着吗？"
+ACTIONFAIL.GIVE = { NOTNIGHT = "月球基地需要月球才能运作，很显然" }
+
+DESCRIBE.MAGMAHOUND = "它为焚毁而生"
+DESCRIBE.LIGHTNINGHOUND = "它为震惊而生"
+DESCRIBE.SPOREHOUND = "它并不为自己而活着"
+DESCRIBE.GLACIALHOUND = "它为冰冻一切而生"
+DESCRIBE.RNESKELETON = "低级和死亡；双重低级"
+DESCRIBE.RAT_WHIP = "感觉如何，被老鼠的身体部位杀死了？"
+DESCRIBE.KLAUS_AMULET = "一切反对我的人都会死"
+DESCRIBE.CRABCLAW = "硬件更新可用"
+DESCRIBE.HAT_RATMASK = "激活搜索模式"
+
+DESCRIBE.ORANGE_VOMIT = "为什么有这样的生命"
+DESCRIBE.GREEN_VOMIT = "为什么有这样的生命"
+DESCRIBE.RED_VOMIT = "为什么有这样的生命"
+DESCRIBE.PINK_VOMIT = "为什么有这样的生命"
+DESCRIBE.YELLOW_VOMIT = "为什么有这样的生命"
+DESCRIBE.PURPLE_VOMIT = "为什么有这样的生命"
+DESCRIBE.PALE_VOMIT = "为什么有这样的生命"
+
+DESCRIBE.WALRUS_CAMP_EMPTY = DESCRIBE.WALRUS_CAMP.EMPTY
+
+DESCRIBE.PIGKING_PIGGUARD =
+{
+	GUARD = DESCRIBE.PIGMAN.GUARD,
+	WEREPIG = DESCRIBE.PIGMAN.WEREPIG,
+}
+
+DESCRIBE.BIGHT = "检测到短路"
+DESCRIBE.KNOOK = "活塞故障"
+DESCRIBE.ROSHIP = "是的，使我沐浴在力量里"
+
+DESCRIBE.UM_PAWN = "螃蟹自动机"
+DESCRIBE.UM_PAWN_NIGHTMARE = "螃蟹自动机"
+
+DESCRIBE.CAVE_ENTRANCE_SUNKDECID = DESCRIBE.CAVE_ENTRANCE
+DESCRIBE.CAVE_ENTRANCE_OPEN_SUNKDECID = DESCRIBE.CAVE_ENTRANCE_OPEN
+DESCRIBE.CAVE_EXIT_SUNKDECID = DESCRIBE.CAVE_EXIT
+
+DESCRIBE.PIGKING_PIGTORCH = DESCRIBE.PIGTORCH
+-- Blowgun stuff
+DESCRIBE.UNCOMPROMISING_BLOWGUN = DESCRIBE.BLOWDART_PIPE
+DESCRIBE.BLOWGUNAMMO_TOOTH = DESCRIBE.BLOWDART_PIPE
+DESCRIBE.BLOWGUNAMMO_FIRE = DESCRIBE.BLOWDART_FIRE
+DESCRIBE.BLOWGUNAMMO_SLEEP = DESCRIBE.BLOWDART_SLEEP
+DESCRIBE.BLOWGUNAMMO_ELECTRIC = DESCRIBE.BLOWDART_YELLOW
+
+DESCRIBE.ANCIENT_AMULET_RED = "外部灵魂储存单元，内存大小未知"
+DESCRIBE.UM_BEAR_TRAP = "我在你眼里是不是很傻"
+DESCRIBE.UM_BEAR_TRAP_OLD = "我在你眼里是不是很傻"
+DESCRIBE.UM_BEAR_TRAP_EQUIPPABLE_TOOTH = "你和我一样，为了毁灭而生"
+DESCRIBE.UM_BEAR_TRAP_EQUIPPABLE_GOLD = "你和我一样，为了毁灭而生"
+DESCRIBE.CORNCAN = "密封食品"
+DESCRIBE.SKULLCHEST_CHILD = "外部存储设备与其他设备同步"
+
+DESCRIBE.SLOBBERLOBBER = "消化液很可怕"
+DESCRIBE.GORE_HORN_HAT = "我将践踏一切"
+DESCRIBE.BEARGERCLAW = "我更喜欢铁拳"
+DESCRIBE.FEATHER_FROCK = "为飞行而战"
+
+DESCRIBE.REDGEM_CRACKED = DESCRIBE.REDGEM .. "\n它现在只有一个目的，而且只有一个目的"
+DESCRIBE.BLUEGEM_CRACKED = DESCRIBE.BLUEGEM .. "\n它现在只有一个目的，而且只有一个目的"
+DESCRIBE.ORANGEGEM_CRACKED = DESCRIBE.ORANGEGEM .. "\n它现在只有一个目的，而且只有一个目的"
+DESCRIBE.GREENGEM_CRACKED = DESCRIBE.GREENGEM .. "\n它现在只有一个目的，而且只有一个目的"
+DESCRIBE.YELLOWGEM_CRACKED = DESCRIBE.YELLOWGEM .. "\n它现在只有一个目的，而且只有一个目的"
+DESCRIBE.PURPLEGEM_CRACKED = DESCRIBE.PURPLEGEM .. "\n它现在只有一个目的，而且只有一个目的"
+DESCRIBE.OPALPRECIOUSGEM_CRACKED = DESCRIBE.OPALPRECIOUSGEM .. "\n它现在只有一个目的，而且只有一个目的"
+
+DESCRIBE.RED_MUSHED_ROOM = "见证我的力量，血肉生物"
+DESCRIBE.GREEN_MUSHED_ROOM = "见证我的力量，血肉生物"
+DESCRIBE.BLUE_MUSHED_ROOM = "见证我的力量，血肉生物"
+
+--StantonStuff
+DESCRIBE.SKULLFLASK = "增强处理器"
+DESCRIBE.SKULLFLASK_EMPTY = "材料用尽，检测流体回流"
+DESCRIBE.STANTON_SHADOW_TONIC = "影响睡眠模块"
+DESCRIBE.STANTON_SHADOW_TONIC_FANCY = DESCRIBE.STANTON_SHADOW_TONIC
+DESCRIBE.STANTON = "为什么像你这样的肉体不能死去"
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_HYPERCOURAGE = "CPU 功能最大"
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_HYPERCOURAGE = "CPU 功率下降"
+
+--StantonStuff
+
+DESCRIBE.ARMORLAVAE = DESCRIBE.LAVAE
+
+DESCRIBE.THEATERCORN = "痛苦将放大它的效果，我最喜欢的食物"
+DESCRIBE.DEERCLOPS_BARRIER = "障碍，我可以打破它"
+
+
+DESCRIBE.MOONMAW_DRAGONFLY = "飞行野兽中包含着月光能量"
+DESCRIBE.MOONMAW_LAVAE = "被武器化的婴儿"
+DESCRIBE.SNAPPERTURTLE = "你的外壳很烂"
+DESCRIBE.SNAPPERTURTLEBABY = "我可以踩到你并打碎你的外壳"
+DESCRIBE.SNAPPERTURTLENEST = "为什么"
+DESCRIBE.GLASS_SCALES = "我可以使用它"
+DESCRIBE.MOONGLASS_GEODE = "获得月光能量，我的力量在增长"
+DESCRIBE.ARMOR_GLASSMAIL =
+"进攻能力接近极限，我势不可挡"
+DESCRIBE.ARMOR_GLASSMAIL_SHARDS = "你将被剔除"
+DESCRIBE.MOONMAW_GLASSSHARDS_RING = DESCRIBE.ARMOR_GLASSMAIL_SHARDS
+DESCRIBE.MOONMAW_GLASSSHARDS = DESCRIBE.ARMOR_GLASSMAIL_SHARDS
+DESCRIBE.MOONMAW_LAVAE_RING = DESCRIBE.MOONMAW_LAVAE
+DESCRIBE.MUTATOR_TRAPDOOR = DESCRIBE.MUTATOR_WARRIOR
+
+DESCRIBE.WOODPECKER = "像大多数有机物一样响亮而烦人"
+DESCRIBE.SNOTROAST = "警告：可能导致化学发动机堵塞"
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_LARGEHUNGERSLOW = "检测到化学发动机堵塞"
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_LARGEHUNGERSLOW = "堵塞已移除"
+DESCRIBE.BOOK_RAIN_UM = "末日来临，对于机器人"
+DESCRIBE.FLORAL_BANDAGE = "重型修理包"
+DESCRIBE.DORMANT_RAIN_HORN = "无用外壳"
+DESCRIBE.RAIN_HORN = "我要把它扔回海底，它应该在哪里"
+DESCRIBE.DRIFTWOODFISHINGROD = "这是一种责任"
+
+ANNOUNCE.ANNOUNCE_RATSNIFFER_ITEMS = {
+	LEVEL_1 = "正在运行系统诊断：物品引起了不必要的注意",
+}
+ANNOUNCE.ANNOUNCE_RATSNIFFER_FOOD = {
+	LEVEL_1 = "正在运行系统诊断：有机食品吸引了不必要的注意",
+}
+ANNOUNCE.ANNOUNCE_RATSNIFFER_BURROWS = {
+	LEVEL_1 = "正在进行系统诊断：肮脏的无人机正在远处聚焦",
+}
+
+DESCRIBE.PIED_RAT = "STOP MAKING SO MANY HORRIBLE SOUNDS"
+DESCRIBE.PIED_PIPER_FLUTE = "I WILL SNAP IT IN HALF"
+DESCRIBE.UNCOMPROMISING_PACKRAT = "MOBILE VERMIN STORAGE"
+
+ANNOUNCE.ANNOUNCE_PORTABLEBOAT_SINK = "警报：寻找更安全的地面并等待重新部署"
+
+--wx already had action fail, whoops
+--ACTIONFAIL.CHARGE_FROM =
+--{
+--	NOT_ENOUGH_CHARGE = "I MUST RESTORE MY SIBLING",
+--	CHARGE_FULL = "I AM NOT DOING THAT.",
+--}
+ANNOUNCE.ANNOUNCE_CHARGE_SUCCESS_INSULATED = "我需要你的生命，对不起"
+ANNOUNCE.ANNOUNCE_CHARGE_SUCCESS_ELECTROCUTED = "PLEASE DO NOT FIGHT BACK"
+
+----UNDER THE WEATHER----
+
+DESCRIBE.WINONA_TOOLBOX = "存放破坏工具"
+ACTIONFAIL.WINONATOOLBOX = "我不允许查看内容"
+DESCRIBE.WINONA_CATAPULT_ITEM = "谁拆散了你？"
+DESCRIBE.WINONA_SPOTLIGHT_ITEM = "谁拆了你？"
+DESCRIBE.WINONA_BATTERY_LOW_ITEM = "谁拆了你？"
+DESCRIBE.WINONA_BATTERY_HIGH_ITEM = "谁拆了你？"
+DESCRIBE.POWERCELL = "充满生命力"
+DESCRIBE.WINONA_UPGRADEKIT_ELECTRICAL = "你好，侄子。"
+DESCRIBE.MINERHAT_ELECTRICAL = "支持充电升级"
+
+DESCRIBE.OCEAN_SPEAKER = 
+"好奇。这里的肉体似乎没有能力建造这个"
+--DESCRIBE.UM_SIREN = "她似乎是这里的超级海洋生物"
+
+DESCRIBE.OCUPUS_BEAK = "就像我一样，这个外壳是不屈不挠的"
+DESCRIBE.OCUPUS_TENTACLE = "即使死亡它仍在移动"
+DESCRIBE.OCUPUS_TENTACLE_EYE = "它死了"
+DESCRIBE.OCUPUS_TENTACLE_COOKED =
+"圆盘形状最适合我的食物槽"
+DESCRIBE.UM_OCUPUS_EYE = "有机大规模监视，最好避免"
+DESCRIBE.UM_OCUPUS_EYETACLE = "消灭有机物的目标眼睛"
+DESCRIBE.UM_OCUPUS_TENTACLE = "警告：有机接合船体"
+DESCRIBE.UM_OCUPUS_BEAK = "发出高频干扰"
+DESCRIBE.BEAKBASHER = "改进的粉碎工具"
+DESCRIBE.HOUNDIOUS_OBSERVIOUS = "将肉制成通知设备，很好"
+
+DESCRIBE.ARMOR_REED_UM = DESCRIBE.ARMORGRASS
+DESCRIBE.ARMOR_SHARKSUIT_UM = "害怕我，我现在就是鲨鱼"
+DESCRIBE.ROCKJAWLEATHER = "鱼鳍怕鱼"
+
+DESCRIBE.EYEOFTERROR_MINI_ALLY = "它们具有高度的可处置性"
+DESCRIBE.EYEOFTERROR_MINI_GROUNDED_ALLY = DESCRIBE.EYEOFTERROR_MINI_GROUNDED
+
+DESCRIBE.STUFFED_PEEPER_POPPERS = "我不想对这个做任何事"
+DESCRIBE.UM_DEVILED_EGGS = "纯粹邪恶的创造"
+DESCRIBE.LUSH_ENTRANCE = "不。我拒绝深入"
+DESCRIBE.CRITTER_FIGGY =
+"我将集结你们的军队。我们将所有一起消灭"
+DESCRIBE.GIANT_TREE_BIRDNEST =
+"它的外壳很脆弱，需要被踩"
+
+DESCRIBE.SLUDGE = "令人作呕的海洋排泄物泥浆"
+DESCRIBE.SLUDGE_OIL = "腐蚀性"
+DESCRIBE.SLUDGE_SACK = "令人厌恶的背带不适合使用"
+DESCRIBE.CANNONBALL_SLUDGE_ITEM = "我会下硫磺。"
+DESCRIBE.BOAT_BUMPER_SLUDGE = "污泥填充"
+DESCRIBE.BOAT_BUMBER_SLUDGE_KIT = "污泥缓冲器提供船垫"
+DESCRIBE.BOATPATCH_SLUDGE = "撤消孔"
+DESCRIBE.UM_COPPER_PIPE = "纸张卷成管状"
+DESCRIBE.BRINE_BALM = "我没有感觉到任何痛苦"
+DESCRIBE.UNCOMPROMISING_FISHINGNET = DESCRIBE.FISHINGNET
+DESCRIBE.UM_AMBER = "赭石物质"
+DESCRIBE.UM_BEEGUN = "我自己的不愿意弹药的殖民地"
+DESCRIBE.BULLETBEE = DESCRIBE.KILLERBEE
+DESCRIBE.CHERRYBULLETBEE = DESCRIBE.KILLERBEE
+DESCRIBE.SUNKENCHEST_ROYAL_RANDOM = "得到这个是皇家的痛苦。"
+DESCRIBE.SUNKENCHEST_ROYAL_RED = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+DESCRIBE.SUNKENCHEST_ROYAL_BLUE = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+DESCRIBE.SUNKENCHEST_ROYAL_PURPLE = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+DESCRIBE.SUNKENCHEST_ROYAL_GREEN = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+DESCRIBE.SUNKENCHEST_ROYAL_ORANGE = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+DESCRIBE.SUNKENCHEST_ROYAL_YELLOW = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+DESCRIBE.SUNKENCHEST_ROYAL_RAINBOW = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+
+DESCRIBE.STEERINGWHEEL_COPPER = "全面处理：已启用。"
+DESCRIBE.STEERINGWHEEL_COPPER_ITEM = "它是为我制造的"
+DESCRIBE.BOAT_BUMPER_COPPER = "金属船体是顶级防御"
+DESCRIBE.BOAT_BUMPER_COPPER_KIT = "我的船的完美船体"
+DESCRIBE.UM_DREAMCATCHER = "我梦见电羊。"
+DESCRIBE.UM_BRINEISHMOSS = "无用的有机材料"
+DESCRIBE.UM_COALESCED_NIGHTMARE = "浓缩恐怖片"
+DESCRIBE.SLUDGE_CORK = "我会堵住恶心的有机孔"
+DESCRIBE.SLUDGESTACK = "我如何让它停止"
+DESCRIBE.SPECTER_SHIPWRECK = "肉体中的一个常见错误。"
+
+DESCRIBE.UNCOMPROMISING_HARPOON = 
+"从远处刺杀东西从未如此简单。"
+DESCRIBE.UNCOMPROMISING_HARPOON_HEAVY = "它没有看起来那么重。"
+DESCRIBE.UNCOMPROMISING_HARPOONREEL = "这是卷轴交易。"
+DESCRIBE.UM_MAGNERANG = "警告：远离主板"
+DESCRIBE.UM_MAGNERANGREEL = "不合逻辑。这只适用于金属"
+DESCRIBE.SIREN_THRONE = "又一个可怕的海洋岩石"
+DESCRIBE.LAVASPIT_SLUDGE = "注意：容易接近过热"
+
+DESCRIBE.UM_BEEGUARD_SHOOTER = DESCRIBE.BEEGUARD
+DESCRIBE.UM_BEEGUARD_SEEKER = DESCRIBE.BEEGUARD
+DESCRIBE.UM_BEEGUARD_BLOCKER = "已被防火墙检测"
+
+DESCRIBE.PORTABLEBOAT_ITEM = "不保证安全"
+DESCRIBE.MASTUPGRADE_WINDTURBINE_ITEM = "是的。抓住风。"
+
+DESCRIBE.UM_ORNAMENT_OPOSSUM = "永远装死。"
+DESCRIBE.UM_ORNAMENT_RAT = "我会把它的尸体挂在树上"
+
+DESCRIBE.TRINKET_WATHOM1 = "我的天哪，你的排气口上全是什么"
+
+
+DESCRIBE.CODEX_MANTRA = DESCRIBE.WAXWELLJOURNAL
+
+-- WIXIE RELATED STRINGS
+
+DESCRIBE.WIXIE_PIANO = "它不能自己演奏，需要升级"
+DESCRIBE.WIXIE_CLOCK = "一个可怜的木制机器"
+DESCRIBE.WIXIE_WARDROBE = "警告：检测到黑暗"
+DESCRIBE.CHARLES_T_HORSE = "一文不值的饰品"
+DESCRIBE.THE_REAL_CHARLES_T_HORSE = "告诉我他们的秘密，歹徒"
+DESCRIBE.SLINGSHOT_MATILDA = "她正在提升"
+DESCRIBE.SLINGSHOT_GNASHER = "真是浪费好材料啊"
+
+DESCRIBE.SLINGSHOTAMMO_LAZY = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_SHADOW = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_FIRECRACKERS = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_HONEY = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_RUBBER = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_TREMOR = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_MOONROCK = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_MOONGLASS = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_SALT = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_SLIME = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_GOOP = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_FLARE = DESCRIBE.SLINGSHOTAMMO_ROCK
+
+DESCRIBE.SLINGSHOTAMMO_INSANITY = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_LUNARVINE = DESCRIBE.SLINGSHOTAMMO_ROCK
+
+DESCRIBE.SLINGSHOTAMMO_LIMESTONE = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_TAR = DESCRIBE.SLINGSHOTAMMO_ROCK
+DESCRIBE.SLINGSHOTAMMO_OBSIDIAN = DESCRIBE.SLINGSHOTAMMO_ROCK
+
+DESCRIBE.BAGOFMARBLES = "警告：窒息危险。"
+
+DESCRIBE.MEATRACK_HAT = {
+	GENERIC = DESCRIBE.MEATRACK.GENERIC,
+
+	DRYING = DESCRIBE.MEATRACK.DRYING,
+	DRYINGINRAIN = DESCRIBE.MEATRACK.DRYINGINRAIN,
+
+	DRYING_NOTMEAT = DESCRIBE.MEATRACK.DRYING_NOTMEAT,
+	DRYINGINRAIN_NOTMEAT = DESCRIBE.MEATRACK.DRYINGINRAIN_NOTMEAT,
+}
+DESCRIBE.FISHMEAT_DRIED = "你的水现在在哪里，鱼？"
+DESCRIBE.SMALLFISHMEAT_DRIED = "你之前是湿的，现在你什么都不是了"
+
+DESCRIBE.WIXIEGUN = "向枪致敬"
+
+DESCRIBE.MARA_BOSS1 = "警告: 危险来袭"
+ANNOUNCE.GAS_DAMAGE = "错误警告：错误警告，有害气体来袭"
+
+-- 火焰荨麻的东西
+DESCRIBE.UM_PYRE_NETTLES = "令人震惊的普遍存在的有机火力"
+DESCRIBE.UM_SMOLDER_SPORE = "武装，准备"
+ANNOUNCE.ANNOUNCE_SMOLDER_SPORE_EATEN = "警告：燃料摄入不成功"
+ANNOUNCE.ANNOUNCE_SMOLDER_SPORE_INVENTORY_POP = "警告：愚蠢的有机物还在储存中"
+DESCRIBE.UM_ARMOR_PYRE_NETTLES = "警告：无法抹去内部的刺"
+DESCRIBE.UM_BLOWDART_PYRE = "对有机物的多层次的残忍。我一时很高兴"
+
+--《天气预报》第一部分
+DESCRIBE.ALPHA_LIGHTNINGGOAT = "狼群之首"
+DESCRIBE.UM_TORNADO = "警告：大风"
+DESCRIBE.UM_WATERFALL = "是否没有办法逃离这场瘟疫？"
+ANNOUNCE.ANNOUNCE_UM_NO_TORNADO = "没有发现龙卷风"

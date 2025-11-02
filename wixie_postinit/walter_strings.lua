@@ -1,0 +1,177 @@
+ANNOUNCE = GLOBAL.STRINGS.CHARACTERS.WALTER
+DESCRIBE = GLOBAL.STRINGS.CHARACTERS.WALTER.DESCRIBE
+ACTIONFAIL = GLOBAL.STRINGS.CHARACTERS.WALTER.ACTIONFAIL
+STRINGS = GLOBAL.STRINGS
+--	[ 		Walter Descriptions		]   --
+	
+	DESCRIBE.WOBYSMALL = {
+		FULL = {
+					"再喂她就要长大了！",
+					"她是不是在长大？",
+				},
+		GENERIC = {
+					"好孩子，沃比！",
+					"怎么了，孩子？是有人掉进井里了吗？",
+				},
+		HUNGRY = {
+					"我想她想要点好吃的！",
+					"怎么了，孩子？你饿了吗？",
+				},
+		STARVING = {
+					"她看起来饿坏了！",
+					"我得给她找点吃的！",
+				},
+	}
+	
+	DESCRIBE.WOBYBIG = {
+		FULL = {
+					"再喂她就不健康了！",
+					"她吃饱了，很开心！",
+				},
+		GENERIC = {
+					"好孩子，沃比！",
+					"怎么会有人害怕这张脸呢？",
+				},
+		HUNGRY = {
+					"你想要点好吃的吗，沃比？",
+					"她好像有点饿了！",
+				},
+		STARVING = {
+					"要是我不喂她，她就要变小了！",
+					"怎么了，孩子？你饿了吗？",
+				},
+	}
+	
+	DESCRIBE.MEATRACK_HAT = {
+			GENERIC = DESCRIBE.MEATRACK.GENERIC,
+			
+			DRYING = DESCRIBE.MEATRACK.DRYING,
+			DRYINGINRAIN = DESCRIBE.MEATRACK.DRYINGINRAIN,
+			
+			DRYING_NOTMEAT = DESCRIBE.MEATRACK.DRYING_NOTMEAT,
+			DRYINGINRAIN_NOTMEAT = DESCRIBE.MEATRACK.DRYINGINRAIN_NOTMEAT,
+	}
+	
+	ANNOUNCE.ANNOUNCE_SMALLWOBYSTARVING = "听起来沃比快饿坏了！"
+	ANNOUNCE.ANNOUNCE_SMALLWOBYVERYHUNGRY = "要是我不给她找点吃的，沃比很快就要饿死了！"
+	ANNOUNCE.ANNOUNCE_SMALLWOBYHUNGRY = "我得尽快给沃比找点食物了。"
+	ANNOUNCE.ANNOUNCE_SMALLWOBYNORMAL = "噢，她停止变身了。"
+	
+	ANNOUNCE.ANNOUNCE_BIGWOBYHUNGRY = "要是我不快点喂她，沃比可能就要变小了。"
+	ANNOUNCE.ANNOUNCE_BIGWOBYNORMAL = "沃比好像有点饿了，但她还撑得住！"
+	ANNOUNCE.ANNOUNCE_BIGWOBYFULL = "你饿了吗，沃比？我看你挺好的！"
+	
+	ANNOUNCE.ANNOUNCE_WOBY_HURT = {
+		"哦不！沃比！你还好吗？！",
+		"小心点，沃比！",
+		"离沃比远点！",
+	}
+	
+	ANNOUNCE.ANNOUNCE_WOBY_STOP = "没事了，沃比！你可以停下了！"
+	ANNOUNCE.ANNOUNCE_WOBY_COMBAT_STOP = "别管他们了，沃比！"
+	ANNOUNCE.ANNOUNCE_WOBY_BARK = "吓唬他们，沃比！"
+	ANNOUNCE.ANNOUNCE_WOBY_FETCH = "去捡回来，孩子！"
+	ANNOUNCE.ANNOUNCE_WOBY_NEVERMIND = "呃，没事了，沃比……"
+	ANNOUNCE.ANNOUNCE_WOBY_HERE = "过来，孩子！"
+	ANNOUNCE.ANNOUNCE_WOBY_STAY = "坐下！待着？总之……别动！"
+	ANNOUNCE.ANNOUNCE_TROUP_STAY = "到这来，伙伴们！"
+	ANNOUNCE.ANNOUNCE_TROUP_ATTACK = "保护伙伴们！"
+	ANNOUNCE.ANNOUNCE_TROUP_ATTENTION = "干活了，伙伴们！"
+	ANNOUNCE.ANNOUNCE_TROUP_NEVERMIND = "呃，没事了，伙伴们……"
+	ANNOUNCE.ANNOUNCE_WOBY_TOOSTACKED = "沃比拿不了更多这个了！"
+	ANNOUNCE.ANNOUNCE_WOBY_TOOFULL = "沃比的背包太满了！"
+	
+	STRINGS.ACTIONS.WOBY_COMMAND = "命令！"
+	STRINGS.ACTIONS.WOBY_COMMAND_BARK = "吠叫！"
+	STRINGS.ACTIONS.WOBY_COMMAND_FETCH = "捡东西！"
+	STRINGS.ACTIONS.WOBY_COMMAND_DIG = "挖掘！"
+	STRINGS.ACTIONS.WOBY_STAY = "待着！"
+	STRINGS.ACTIONS.WOBY_HERE = "过来！"
+	STRINGS.ACTIONS.WOBY_OPEN = "沃比的物品栏"
+	
+	STRINGS.ACTIONS._WOBY_COMMAND =
+	{
+		BARK = "吠叫！",
+		FETCH = "捡东西！",
+		DIG = "挖掘！",
+
+	}
+	
+	ACTIONFAIL.WOBY_COMMAND = {
+		WOBYHUNGRY = "我想沃比饿了！",
+		WOBYTOOSMALL = "我想她太小了，做不了那个！",
+		WOBYTOODANGEROUS = "等等，沃比！那太危险了！",
+		WOBYNEEDTODISMOUNT = "我骑着她的时候，沃比做不了那个！",
+		WOBYNEVERMIND = "呃，没事了，沃比……",
+		TROUPNEVERMIND = "呃，没事了，伙伴们……"
+	}
+	STRINGS.CHARACTER_DESCRIPTIONS.walter = "*有个乐于助人的四条腿朋友\n*什么都不怕，除了受伤\n*……或者沃比受伤\n*对时尚毫无兴趣\n*拥有独特的侦察知识和工具！"
+
+
+	--Modified lines, to avoid mention of the slingshot
+	DESCRIBE.BLOWDART_FIRE = "小心别吸进去！"
+	DESCRIBE.BLOWDART_SLEEP = "小心别吸进去！"
+	DESCRIBE.BLOWDART_PIPE = "小心别吸进去！"
+	DESCRIBE.BLOWDART_YELLOW = "小心别吸进去！"
+
+	DESCRIBE.TRINKET_1 = "我没时间玩游戏！" --Melted Marbles
+	DESCRIBE.SLINGSHOT = "有人可能会用这个射到自己的眼睛！"
+	DESCRIBE.SLINGSHOTAMMO_ROCK = "多么足智多谋！现在只要她能远离麻烦就好了……"
+	DESCRIBE.SLINGSHOTAMMO_MARBLE = "多么足智多谋！现在只要她能远离麻烦就好了……"
+	DESCRIBE.SLINGSHOTAMMO_THULECITE = "多么足智多谋！现在只要她能远离麻烦就好了……"
+	DESCRIBE.SLINGSHOTAMMO_GOLD = "多么足智多谋！现在只要她能远离麻烦就好了……"
+	DESCRIBE.SLINGSHOTAMMO_SLOW = "多么足智多谋！现在只要她能远离麻烦就好了……"
+	DESCRIBE.SLINGSHOTAMMO_FREEZE = "多么足智多谋！现在只要她能远离麻烦就好了……"
+	DESCRIBE.SLINGSHOTAMMO_POOP = "多么足智多谋！现在只要她能远离麻烦就好了……"
+	ANNOUNCE.ANNOUNCE_WOBY_WORK =
+	{
+		"沃比，快来帮我！",
+		"搭把“手”，孩子！嘿。",
+		"想帮忙吗，沃比？",
+		"有空吗，沃比？",
+		"谁是我的特别小帮手？",
+		"我随时都需要你的帮助，沃比！",
+		"能借我一只“爪子”吗？嘿。",
+		"生活给了你巨大的角，你就得好好利用它们！拜托啦？",
+		"对于最棒最厉害的女孩来说，这点活儿不算什么！",
+		"干点活儿有特别惊喜哦！来吧！",
+		"记住，尽量用你的角，而不是你的头！",
+		"如果我们一起干，眨眼间就能搞定！或者多眨几下。",
+		"上，沃比！让大家看看你有多强壮！",
+		"没错，小可爱也得干活！适者生存！",
+		"别把它当成工作！就当是……锻炼！对！",
+	}
+	ANNOUNCE.ANNOUNCE_WOBY_SIT =
+	{
+		"沃比，待着！",
+		"待着，孩子！",
+		"休息一下，沃比！",
+		"待着，沃比！就这样。",
+		"爪子放那儿，沃比！嘿。",
+		"坐下！待着？总之……别动！",
+	}
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_SHATTERSHOTS_TITLE = "已弃用"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_SHATTERSHOTS_DESC = "不再对沃尔特有帮助。"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_LUCKY_TITLE = "已弃用"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_LUCKY_DESC = "不再对沃尔特有帮助。"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_UTILITY_TITLE = "已弃用"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_UTILITY_DESC = "不再对沃尔特有帮助。"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_LOCK_DESC = "不再对沃尔特有帮助。"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_EFFICIENCY_TITLE = "已弃用"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_EFFICIENCY_DESC = "不再对沃尔特有帮助。"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_BAG_TITLE = "已弃用"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_BAG_DESC = "不再对沃尔特有帮助。"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_LUNAR_LOCK_DESC = "不再对沃尔特有帮助。"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_SHADOW_LOCK_DESC = "不再对沃尔特有帮助。"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_LUNAR_TITLE = "已弃用"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_LUNAR_DESC = "不再对沃尔特有帮助。"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_SHADOW_TITLE = "已弃用"
+	STRINGS.SKILLTREE.WALTER.WALTER_AMMO_SHADOW_TITLE = "已弃用"
+	STRINGS.SKILLTREE.WALTER.WALTER_SLINGSHOT_MODDING_TITLE = "已弃用"
+	STRINGS.SKILLTREE.WALTER.WALTER_SLINGSHOT_MODDING_DESC = "不再对沃尔特有帮助。"
+	STRINGS.SKILLTREE.WALTER.WALTER_SLINGSHOT_HANDLES_TITLE = "已弃用"
+	STRINGS.SKILLTREE.WALTER.WALTER_SLINGSHOT_HANDLES_DESC = "不再对沃尔特有帮助。"
+	STRINGS.SKILLTREE.WALTER.WALTER_SLINGSHOT_BANDS_TITLE = "已弃用"
+	STRINGS.SKILLTREE.WALTER.WALTER_SLINGSHOT_BANDS_DESC = "不再对沃尔特有帮助。"
+	STRINGS.SKILLTREE.WALTER.WALTER_SLINGSHOT_FRAMES_TITLE = "已弃用"
+	STRINGS.SKILLTREE.WALTER.WALTER_SLINGSHOT_FRAMES_DESC = "不再对沃尔特有帮助。"

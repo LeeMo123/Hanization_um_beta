@@ -1,0 +1,670 @@
+local require = GLOBAL.require
+
+STRINGS = GLOBAL.STRINGS
+STRINGS.CHARACTERS.WIXIE = require "wixie_speech"
+ANNOUNCE = STRINGS.CHARACTERS.WIXIE
+DESCRIBE = STRINGS.CHARACTERS.WIXIE.DESCRIBE
+ACTIONFAIL = STRINGS.CHARACTERS.WIXIE.ACTIONFAIL
+
+STRINGS.NAMES.WIXIE = "薇茜"
+STRINGS.CHARACTER_TITLES.wixie = "不良少女"
+STRINGS.CHARACTER_NAMES.wixie = "薇茜"
+STRINGS.CHARACTER_DESCRIPTIONS.wixie =
+"*擅长弹弓\n*能用力推开东西\n*有幽闭恐惧症"
+STRINGS.CHARACTER_QUOTES.wixie = "\"不是我干的！\""
+
+STRINGS.SKIN_NAMES.wixie_none = "薇茜"
+
+STRINGS.SKIN_QUOTES.wixie_none = "\"不是我干的！\""
+STRINGS.SKIN_DESCRIPTIONS.wixie_none =
+"一个总惹麻烦的问题青年。"
+
+if TUNING.DSTU and TUNING.DSTU.WIXIE then
+    STRINGS.CHARACTER_DESCRIPTIONS.walter =
+    "*什么都不怕，除了受伤\n󰀕是生存大师\n󰀕是训狗专家\n*对蜜蜂过敏\n*对时尚不感兴趣"
+end
+
+--	[ 		Wixie Descriptions		]	--
+
+ANNOUNCE.EQUIP_CHARLES = {
+    "就像过去一样！", "驾，查尔斯！",
+    "我们去抓些害虫！", "你是我最喜欢的副手！",
+    "查尔斯，我们俩对抗全世界！", "咿哈！"
+} -- Despite how cruel she can be, shes still a kid at the end of the day :)
+
+ANNOUNCE.SHOVE_TARGET_TOO_FAT = "这家伙太胖了，推不动！"
+ANNOUNCE.UNCOMFORTABLE_HAT = "这顶帽子让我不舒服..."
+ANNOUNCE.UNCOMFORTABLE_ARMOR = "这件盔甲让我不舒服..."
+
+ANNOUNCE.DREADEYE_SPOOKED = "嘿！快回来让我打你！"
+ANNOUNCE.ANNOUNCE_HARDCORE_RES =
+"你在看这个吗？那就告诉我们！因为它不？"
+ANNOUNCE.ANNOUNCE_WINONAGEN = "妈妈告诉过我不要玩电！"
+ANNOUNCE.ANNOUNCE_RATRAID = "哦不，我知道那声音意味着什么..."
+ANNOUNCE.ANNOUNCE_RATRAID_SPAWN = "老鼠？！为什么非得是老鼠..."
+ANNOUNCE.ANNOUNCE_RATRAID_OVER =
+"我的东西！我漂亮的东西！快还给我！"
+ANNOUNCE.ANNOUNCE_ACIDRAIN = {
+    "嗷！别再污染了！", "我以为‘水不会伤人’！",
+    "哎哟！希望它不会烧穿我的衣服..."
+}
+ANNOUNCE.ANNOUNCE_TOADSTOOLED = "我的天哪！"
+-- FoodBuffs
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_LESSERELECTRICATTACK =
+    ANNOUNCE.ANNOUNCE_ATTACH_BUFF_ELECTRICATTACK
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_ELECTRICRETALIATION =
+    ANNOUNCE.ANNOUNCE_ATTACH_BUFF_ELECTRICATTACK
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_FROZENFURY = "我……我的皮肤感觉冰冰的……"
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_VETCURSE = "我……我才不怕！"
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_LESSERELECTRICATTACK =
+    ANNOUNCE.ANNOUNCE_DETACH_BUFF_ELECTRICATTACK
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_ELECTRICRETALIATION =
+    ANNOUNCE.ANNOUNCE_DETACH_BUFF_ELECTRICATTACK
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_FROZENFURY = "我想我解冻了。"
+-- FoodBuffs
+
+-- CaliforniaKing
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_CALIFORNIAKING =
+"那东西像卡车一样撞进我的胃里……"
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_CALIFORNIAKING = "现在我只觉得头疼……"
+DESCRIBE.CALIFORNIAKING = "我觉得我还没到能喝这个的年纪。"
+-- CaliforniaKing
+
+ANNOUNCE.ANNOUNCE_RNEFOG = "谁在那儿？出来！"
+DESCRIBE.UNCOMPROMISING_RAT = "滚开，你这肮脏的东西！"
+DESCRIBE.UNCOMPROMISING_RATHERD =
+"就算我们把它填上，它们也会找到另一条路。"
+DESCRIBE.UNCOMPROMISING_RATBURROW =
+"就算我们把它填上，它们也会找到另一条路。"
+DESCRIBE.UNCOMPROMISING_WINKYBURROW =
+"里面有什么宝藏？我们可能永远不会知道……"
+DESCRIBE.UNCOMPROMISING_WINKYHOMEBURROW =
+"我不确定我想要从那样的洞里拿出什么东西。"
+
+DESCRIBE.WINKY = {
+    GENERIC = "去烦别人吧，笨蛋！",
+    ATTACKER = "你最好没得狂犬病！",
+    MURDERER = "滚回你的洞里去，%s！",
+    REVIVER = "别求我！",
+    GHOST = "不知道有没有老鼠在我家闹鬼……",
+    FIRESTARTER = "放火？！你就不能去啃点家具什么的吗，%s？"
+}
+
+DESCRIBE.WATHOM = {
+    GENERIC = "你再张着嘴，苍蝇就要飞进去了，%s。",
+    ATTACKER = "我觉得%s尝到了血的味道。",
+    MURDERER = "%s发狂了！快跑！",
+    REVIVER = "好吧，至少你没把心脏吃了！",
+    GHOST = "真是个奇怪的……鬼？怎么会有奇怪的鬼？！",
+    FIRESTARTER = "大多数野兽都不会诉诸于烧东西。"
+}
+
+DESCRIBE.RATPOISONBOTTLE = "麻烦正在酝酿！"
+DESCRIBE.RATPOISON =
+"这似乎很残忍，但那些混蛋需要被处理掉！"
+
+DESCRIBE.MONSTERSMALLMEAT = "怪物比肉多。"
+DESCRIBE.COOKEDMONSTERSMALLMEAT =
+"我把怪物熏出来了。大部分肉也熏没了……"
+DESCRIBE.MONSTERSMALLMEAT_DRIED = "也许这样会好点？"
+
+DESCRIBE.UM_MONSTEREGG = "跟我一样，是个坏蛋！"
+DESCRIBE.UM_MONSTEREGG_COOKED = "希望这种事永远不会发生在我身上！"
+
+DESCRIBE.MUSHROOMSPROUT_OVERWORLD = "一里外都能闻到！"
+DESCRIBE.TOADLING = "我能看到它身上滴下来的黏液。恶心！"
+
+DESCRIBE.GASMASK = "这里面好臭！我不想戴！"
+DESCRIBE.MOCK_DRAGONFLY = DESCRIBE.DRAGONFLY
+DESCRIBE.MOTHERGOOSE = DESCRIBE.MOOSE
+DESCRIBE.UM_SPIDERQUEENCORPSE = "啊，她得了尸僵。"
+ANNOUNCE.ANNOUNCE_SNEEZE = "啊……啊……阿嚏！！"
+ANNOUNCE.ANNOUNCE_HAYFEVER = "呃，我觉得我的*鼻子*要得幽闭恐惧症了……"
+ANNOUNCE.ANNOUNCE_HAYFEVER_OFF =
+"*吸* *吸* 啊哈，终于，我的过敏好了！"
+ANNOUNCE.ANNOUNCE_SNOWSTORM =
+"把窗户钉上，暴风雪肯定要来了！"
+ANNOUNCE.ANNOUNCE_FIREFALL = {
+    "嘿，这不应该是个特性！", "去告诉开发者，你这混蛋！",
+    "我以为我们把这个移除了！"
+}
+ANNOUNCE.ANNOUNCE_ROOTING = "别碰！别碰！！"
+ANNOUNCE.SHADOWTALKER = {
+    "妈妈整日劳作，她日渐憔悴", "爸爸远走他乡，我们只能祈祷",
+    "薇茜独自一人，闷闷不乐地待在家里"
+}
+
+DESCRIBE.UM_BEAR_TRAP = "就像奶奶的假牙！"
+DESCRIBE.UM_BEAR_TRAP_OLD = "又老又脆，就像奶奶一样。"
+DESCRIBE.UM_BEAR_TRAP_EQUIPPABLE_TOOTH = "上，鲨鱼牙！"
+DESCRIBE.UM_BEAR_TRAP_EQUIPPABLE_GOLD =
+"闪亮的诱饵和陷阱，合二为一！"
+ANNOUNCE.ANNOUNCE_OVER_EAT = {
+    STUFFED = "我控制不住自己，我饿了！",
+    OVERSTUFFED = "我不该把我的胃当成一个额外的口袋……"
+}
+DESCRIBE.SAND = "口袋沙！哈呀！"
+DESCRIBE.SANDHILL = "它无处不在。"
+DESCRIBE.SNOWPILE = "永远放学了！"
+DESCRIBE.SNOWGOGGLES = "雪进我眼睛？雪你的头！"
+
+DESCRIBE.SNOWMONG = "快点融化，‘雪人’！"
+DESCRIBE.SHOCKWORM = "我希望‘我’也有吓人的褶边……"
+DESCRIBE.ZASPBERRY = "人们讨厌我发出那种声音！"
+DESCRIBE.ZASPBERRYPARFAIT = "有了电，一切都更好了！"
+DESCRIBE.ICEBOOMERANG = "不如我的弹弓，但确实很好玩！"
+DESCRIBE.MINOTAUR_BOULDER = "这东西是怎么到这儿来的？"
+DESCRIBE.MINOTAUR_BOULDER_BIG =
+"嘿，Klei！你们干嘛要抄我的重做，啊？啊？！"
+DESCRIBE.VETERANSHRINE =
+"嘿，你呃，眼睛里有黏液流出来。还有鼻子……和嘴巴……"
+DESCRIBE.VET_SKULL = "至少不是我！"
+DESCRIBE.UM_BOSS_SOUL = "现在我可以在它死后嘲讽它了！"
+DESCRIBE.UM_DARK_VESTIGES = "毛骨悚然。"
+DESCRIBE.UM_VOXOLOPHONE = "大声点！我听不见！"
+
+DESCRIBE.UM_EXHUMER = "我最不想要的就是一些臭烘烘的旧骨头把这里弄臭！"
+DESCRIBE.UM_WINGSUIT = "好像是说“别飞得离太阳太近”？我忘了，我讨厌道德说教！"
+DESCRIBE.UM_MOONFLY_LANTERN = "希望没人跟踪我！"
+
+DESCRIBE.RAT_TAIL = "绝对不是糖果。"
+DESCRIBE.PLAGUEMASK = "现在我可以看起来像只傻鸟了。耶。"
+DESCRIBE.SPIDER_TRAPDOOR =
+"你肯定是活在石头下面，才敢面对我！"
+DESCRIBE.TRAPDOOR = "我敢打赌，如果我用力的话，我能用这块石头打水漂。"
+DESCRIBE.HOODEDTRAPDOOR = DESCRIBE.TRAPDOOR
+DESCRIBE.WICKER_TENTACLE = "这是某种恶心的断肢！"
+DESCRIBE.HONEY_LOG = "你……你这个木头脑袋！那是我的蜂蜜！！"
+
+DESCRIBE.BUSHCRAB = "我的浆果！还给我！"
+DESCRIBE.LAVAE2 = DESCRIBE.LAVAE
+DESCRIBE.DISEASECUREBOMB =
+"既然可以把它弄得更坏，为什么还要修理坏掉的东西呢？"
+DESCRIBE.SHROOM_SKIN_FRAGMENT =
+"我想我可以把这些缝在一起。"
+DESCRIBE.AIR_CONDITIONER = "它不能让我凉快……而且还很臭！"
+DESCRIBE.SPOREPACK = "最好别让我长疹子。"
+DESCRIBE.SALTPACK = "在人行道上撒盐，不然就……！"
+
+DESCRIBE.SKELETONMEAT =
+"我读过足够多的恐怖故事，知道这是个坏主意。"
+DESCRIBE.CHIMP = DESCRIBE.MONKEY
+DESCRIBE.SWILSON = ""
+DESCRIBE.VAMPIREBAT = "我……要……你……走……开……！"
+DESCRIBE.LUREPLAGUE_RAT = "呀！那到底是什么鬼东西？！"
+
+-- Swampyness
+DESCRIBE.RICEPLANT = "那是无聊的食物！"
+DESCRIBE.RICE = "它……在动？"
+DESCRIBE.RICE_COOKED = "好吧，它不动了。"
+DESCRIBE.SEAFOODPAELLA = "鱼让米饭不那么无聊了！"
+DESCRIBE.LICELOAF = "我可以用几个这个盖个小房子！"
+DESCRIBE.SUNGLASSES = "它们让我看起来很酷！"
+
+DESCRIBE.CRITTERLAB_REAL = DESCRIBE.CRITTERLAB
+DESCRIBE.CRITTERLAB_REAL_BROKEN =
+"坏了更好，不过我可以用些月亮石修复它。"
+DESCRIBE.SLINGSHOTAMMO_FIRECRACKERS = DESCRIBE.FIRECRACKERS
+DESCRIBE.WALRUS_CAMP_SUMMER = DESCRIBE.WALRUS_CAMP
+DESCRIBE.CHARLIEPHONOGRAPH_100 = DESCRIBE.MAXWELLPHONOGRAPH
+DESCRIBE.BUGZAPPER = "任何飞进去的虫子我可不负责。"
+DESCRIBE.STUMPLING = "你找错对象了！"
+DESCRIBE.BIRCHLING = DESCRIBE.STUMPLING
+DESCRIBE.MOON_TEAR = "别哭了！你会把所有东西都弄脏的！"
+DESCRIBE.SHADOW_TELEPORTER = "漂亮的宝石！现在是我的了。"
+DESCRIBE.POLLENMITEDEN = "把它们烧了，一了百了！"
+DESCRIBE.POLLENMITES = "别碰我！"
+DESCRIBE.SHADOW_CROWN = "配得上女王，或者更棒的，我！"
+DESCRIBE.RNEGHOST = DESCRIBE.GHOST
+DESCRIBE.TRAPDOORGRASS = DESCRIBE.GRASS
+DESCRIBE.MARSH_GRASS = "你没用！"
+DESCRIBE.CURSED_ANTLER = "我征服的战利品！"
+DESCRIBE.BERNIEBOX = "上面的字都是乱码！"
+DESCRIBE.HOODED_FERN = "那是马吃的，不是人吃的！"
+DESCRIBE.HOODEDWIDOW = "不！不！绝对不！"
+DESCRIBE.GIANT_TREE =
+"它很高。很雄伟。而且……我不想看它。"
+DESCRIBE.ANCIENTHOODEDTURF = DESCRIBE.TURF_FOREST
+DESCRIBE.HOODEDMOSS = DESCRIBE.TURF_FOREST
+DESCRIBE.WIDOWSGRASP = "再来七个，我就可以假装是蜘蛛了！"
+DESCRIBE.WEBBEDCREATURE = "恶心，我可不想被困在里面……"
+ANNOUNCE.WEBBEDCREATURE = "如果我用力的话，我能打破它！"
+DESCRIBE.SNAPDRAGON_BUDDY = "别跟我套近乎！"
+DESCRIBE.SNAPDRAGON = "我怀疑它有没有脑子。"
+DESCRIBE.SNAPPLANT = "那些大植物因为一些愚蠢的原因喜欢它。"
+DESCRIBE.WHISPERPOD = "我才不让一棵植物告诉我该做什么！"
+DESCRIBE.WHISPERPOD_NORMAL_GROUND = {
+    GENERIC = "怎么？你还想要？",
+    GROWING = "快点！呃！"
+}
+DESCRIBE.FRUITBAT = "我想咬它一口。"
+DESCRIBE.PITCHERPLANT = "我们要的是投手，不是痒痒肚！"
+DESCRIBE.APHID = "别在我的衣服上咬洞，你这笨蛋！"
+DESCRIBE.GIANT_TREE_INFESTED =
+"什么样的怪人会住在那种地方？"
+DESCRIBE.GIANT_BLUEBERRY = "那肯定会弄得一团糟！"
+DESCRIBE.BLUEBERRYPANCAKES = "妈妈教我做的！它们是我的最爱！"
+DESCRIBE.DEVILSFRUITCAKE = "嘿！谁吃了第一片？！"
+DESCRIBE.SIMPSALAD = "它是……多叶的？而且……紫色的？"
+DESCRIBE.BEEFALOWINGS = "增肌的完美选择！"
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_KNOCKBACKIMMUNE = "没人能把我撞倒！"
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_KNOCKBACKIMMUNE =
+"啊，好吧……我还是不会被人推来推去！"
+DESCRIBE.WIDOWSHEAD = "还很新鲜。而且很恶心。"
+DESCRIBE.HOODED_MUSHTREE_TALL = DESCRIBE.MUSHTREE_TALL
+DESCRIBE.HOODED_MUSHTREE_MEDIUM = DESCRIBE.MUSHTREE_MEDIUM
+DESCRIBE.HOODED_MUSHTREE_SMALL = DESCRIBE.MUSHTREE_SMALL
+DESCRIBE.WATERMELON_LANTERN = "我学会了随机应变。"
+
+-- Viperstuff Quotes
+DESCRIBE.VIPERWORM = "别潜伏了，你这变态！"
+DESCRIBE.VIPERFRUIT = "它可能有毒。"
+DESCRIBE.VIPERJAM = "但是没有面包可以抹……"
+
+DESCRIBE.BLUEBERRYPLANT = {
+    READY = "嗯嗯！那我就不客气了！",
+    FROZE = "噢，天哪！它卡在里面了！",
+    REGROWING = "真好玩！"
+}
+
+DESCRIBE.ANTIHISTAMINE = "“流鼻涕的”？！我给他们瞧瞧！"
+ANNOUNCE.CURSED_ITEM_EQUIP = "啊！我的手！谁敢？"
+DESCRIBE.VETSITEM = "我不会让同伴压力影响到我！"
+DESCRIBE.SCREECHER_TRINKET = "妈妈从来不雕刻这种东西……"
+ACTIONFAIL.GIVE = { NOTNIGHT = "有东西告诉我需要等到晚上。" }
+
+DESCRIBE.MAGMAHOUND = "滚开，你这长疮的！"
+DESCRIBE.LIGHTNINGHOUND = "别叫了，你这大嗓门！"
+DESCRIBE.SPOREHOUND = "别把你的脏东西弄到我身上！"
+DESCRIBE.GLACIALHOUND = "我们有个吐口水的！"
+DESCRIBE.RNESKELETON = "我要让你骨头嘎吱作响！"
+DESCRIBE.RAT_WHIP = "这下要疼了！"
+DESCRIBE.KLAUS_AMULET = "我想……这对我没用。"
+DESCRIBE.CRABCLAW = "你放的宝石越多，‘哐当’声就越重！"
+DESCRIBE.HAT_RATMASK = "像老鼠一样思考，闻起来像老鼠，成为老鼠！"
+
+DESCRIBE.ORANGE_VOMIT = "别让我碰它！"
+DESCRIBE.GREEN_VOMIT = "别让我碰它！"
+DESCRIBE.RED_VOMIT = "别让我碰它！"
+DESCRIBE.PINK_VOMIT = "别让我碰它！"
+DESCRIBE.YELLOW_VOMIT = "别让我碰它！"
+DESCRIBE.PURPLE_VOMIT = "别让我碰它！"
+DESCRIBE.PALE_VOMIT = "别让我碰它！"
+
+DESCRIBE.WALRUS_CAMP_EMPTY = DESCRIBE.WALRUS_CAMP.EMPTY
+DESCRIBE.PIGKING_PIGGUARD = {
+    GUARD = DESCRIBE.PIGMAN.GUARD,
+    WEREPIG = DESCRIBE.PIGMAN.WEREPIG
+}
+
+DESCRIBE.BIGHT = "恶心！这是某种奇怪的马杂交体……"
+DESCRIBE.KNOOK = "嘿！别碰那匹马！"
+DESCRIBE.ROSHIP = "纠结又破烂。"
+
+DESCRIBE.UM_PAWN = "我想把它推倒！"
+DESCRIBE.UM_PAWN_NIGHTMARE = "它看起来……不稳定。"
+
+DESCRIBE.CAVE_ENTRANCE_SUNKDECID = DESCRIBE.CAVE_ENTRANCE
+DESCRIBE.CAVE_ENTRANCE_OPEN_SUNKDECID = DESCRIBE.CAVE_ENTRANCE_OPEN
+DESCRIBE.CAVE_EXIT_SUNKDECID = DESCRIBE.CAVE_EXIT
+
+DESCRIBE.PIGKING_PIGTORCH = DESCRIBE.PIGTORCH
+-- Blowgun stuff
+DESCRIBE.UNCOMPROMISING_BLOWGUN = DESCRIBE.BLOWDART_PIPE
+DESCRIBE.BLOWGUNAMMO_TOOTH = DESCRIBE.BLOWDART_PIPE
+DESCRIBE.BLOWGUNAMMO_FIRE = DESCRIBE.BLOWDART_FIRE
+DESCRIBE.BLOWGUNAMMO_SLEEP = DESCRIBE.BLOWDART_SLEEP
+DESCRIBE.BLOWGUNAMMO_ELECTRIC = DESCRIBE.BLOWDART_YELLOW
+DESCRIBE.CORNCAN = "踢罐子！"
+DESCRIBE.SKULLCHEST_CHILD = "我想应该还有另一个。"
+
+DESCRIBE.ANCIENT_AMULET_RED = "我还是把我的灵魂留给自己吧。"
+DESCRIBE.SLOBBERLOBBER = "哈哈哈！我爱死这东西了！"
+DESCRIBE.GORE_HORN_HAT = "离远点，混蛋们！"
+DESCRIBE.BEARGERCLAW = "我喜欢这个！"
+DESCRIBE.FEATHER_FROCK = "我才不会穿着这东西飞呢。"
+
+DESCRIBE.REDGEM_CRACKED = DESCRIBE.REDGEM ..
+    "\n我不是故意的——我是说，不是我弄坏的！"
+DESCRIBE.BLUEGEM_CRACKED = DESCRIBE.BLUEGEM ..
+    "\n我不是故意的——我是说，不是我弄坏的！"
+DESCRIBE.ORANGEGEM_CRACKED = DESCRIBE.ORANGEGEM ..
+    "\n我不是故意的——我是说，不是我弄坏的！"
+DESCRIBE.GREENGEM_CRACKED = DESCRIBE.GREENGEM ..
+    "\n我不是故意的——我是说，不是我弄坏的！"
+DESCRIBE.YELLOWGEM_CRACKED = DESCRIBE.YELLOWGEM ..
+    "\n我不是故意的——我是说，不是我弄坏的！"
+DESCRIBE.PURPLEGEM_CRACKED = DESCRIBE.PURPLEGEM ..
+    "\n我不是故意的——我是说，不是我弄坏的！"
+DESCRIBE.OPALPRECIOUSGEM_CRACKED = DESCRIBE.OPALPRECIOUSGEM ..
+    "\n我不是故意的——我是说，不是我弄坏的！"
+
+DESCRIBE.RED_MUSHED_ROOM = "我把它压扁了！"
+DESCRIBE.GREEN_MUSHED_ROOM = "我把它压扁了！"
+DESCRIBE.BLUE_MUSHED_ROOM = "我把它压扁了！"
+
+-- StantonStuff
+DESCRIBE.SKULLFLASK = "这不是成年人喝的饮料，对吧？"
+DESCRIBE.SKULLFLASK_EMPTY = "呸，他们怎么能喝那种东西？"
+DESCRIBE.STANTON_SHADOW_TONIC = "别给小孩子那种东西，你这变态！"
+DESCRIBE.STANTON_SHADOW_TONIC2 = DESCRIBE.STANTON_SHADOW_TONIC
+DESCRIBE.STANTON = "不用了，谢谢，变态。"
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_HYPERCOURAGE = "现在我格外勇敢了！"
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_HYPERCOURAGE =
+"恢复到正常的强韧度。"
+-- StantonStuff
+
+DESCRIBE.ARMORLAVAE = DESCRIBE.LAVAE
+
+DESCRIBE.THEATERCORN = "黄油的味道完全盖过了玉米味。"
+DESCRIBE.DEERCLOPS_BARRIER = "放我出去！放我出去！！"
+
+-- Stuff for Canis to check
+
+DESCRIBE.MOONMAW_DRAGONFLY = "它是玻璃做的，能有多硬？"
+DESCRIBE.MOONMAW_LAVAE = "你肯定要被砸碎了！"
+DESCRIBE.SNAPPERTURTLE = "你应该知道；我也会咬回去！"
+DESCRIBE.SNAPPERTURTLEBABY = "可爱，但别想咬我！"
+DESCRIBE.SNAPPERTURTLENEST = "看起来像是免费的早餐。"
+DESCRIBE.GLASS_SCALES = "哦，闪亮的蓝色玻璃。"
+DESCRIBE.MOONGLASS_GEODE = "我得到了一块石头……"
+DESCRIBE.ARMOR_GLASSMAIL = "我不需要跟班！"
+DESCRIBE.ARMOR_GLASSMAIL_SHARDS = "什么？别说话！"
+-- Stuff for Canis to check
+DESCRIBE.MOONMAW_GLASSSHARDS_RING = DESCRIBE.ARMOR_GLASSMAIL_SHARDS
+DESCRIBE.MOONMAW_GLASSSHARDS = DESCRIBE.ARMOR_GLASSMAIL_SHARDS
+DESCRIBE.MOONMAW_LAVAE_RING = DESCRIBE.MOONMAW_LAVAE
+
+DESCRIBE.MUTATOR_TRAPDOOR = DESCRIBE.MUTATOR_WARRIOR
+
+DESCRIBE.WOODPECKER = "它到底能啄多少？"
+DESCRIBE.SNOTROAST = "我想我以前在教堂的聚餐上见过这个……"
+ANNOUNCE.ANNOUNCE_ATTACH_BUFF_LARGEHUNGERSLOW = "请不要给我第二份了……"
+ANNOUNCE.ANNOUNCE_DETACH_BUFF_LARGEHUNGERSLOW = "我想吃点东西！"
+DESCRIBE.BOOK_RAIN_UM = "这是个前传故事。"
+DESCRIBE.FLORAL_BANDAGE = "我不想让那黏糊糊的东西沾到我的伤口上……"
+DESCRIBE.DORMANT_RAIN_HORN = "我讨厌海洋。"
+DESCRIBE.RAIN_HORN = "我希望它能发出又大又烦人的噪音。"
+DESCRIBE.DRIFTWOODFISHINGROD =
+"它来自大海，所以会更好用。对吧？"
+
+ANNOUNCE.ANNOUNCE_RATSNIFFER_ITEMS = {
+    LEVEL_1 = "我讨厌打扫我的房间，但我不想有老鼠，所以……"
+}
+ANNOUNCE.ANNOUNCE_RATSNIFFER_FOOD = {
+    LEVEL_1 = "这里有股腐烂食物的味道！快，找个人把它扔掉！"
+}
+ANNOUNCE.ANNOUNCE_RATSNIFFER_BURROWS = {
+    LEVEL_1 = "我们得找到这些老鼠都是从哪儿来的！"
+}
+
+DESCRIBE.PIED_RAT = "洗个澡吧，油腻鬼！"
+DESCRIBE.PIED_PIPER_FLUTE = "先把它洗干净……"
+DESCRIBE.UNCOMPROMISING_PACKRAT = "嘿！把你的东西给我！"
+
+ANNOUNCE.ANNOUNCE_PORTABLEBOAT_SINK = "我就知道这东西撑不住！"
+
+ACTIONFAIL.CHARGE_FROM = {
+    NOT_ENOUGH_CHARGE = "需要点电。",
+    CHARGE_FULL = "哦，有火花！"
+}
+ANNOUNCE.ANNOUNce_CHARGE_SUCCESS_INSULATED = "我防电！"
+ANNOUNCE.ANNOUNCE_CHARGE_SUCCESS_ELECTROCUTED = "嗷！该死的电……"
+
+----UNDER THE WEATHER----
+
+DESCRIBE.WINONA_TOOLBOX = "那是那个傻大个的。"
+ACTIONFAIL.WINONATOOLBOX = "她藏了什么？！"
+DESCRIBE.POWERCELL = "它又大又重又危险。我喜欢。"
+DESCRIBE.WINONA_UPGRADEKIT_ELECTRICAL =
+"不错。我不知道这是什么，但它很不错！"
+DESCRIBE.MINERHAT_ELECTRICAL = "电让一切都变得更好！"
+DESCRIBE.OCEAN_SPEAKER =
+"它……在发出声音吗？我听不清……我头疼……"
+-- DESCRIBE.UM_SIREN = "Oh yeah!? I can blow bubbles twice as big! Watch!"
+
+-- DESCRIBE.OCUPUS_BEAK = ""
+DESCRIBE.OCUPUS_TENTACLE = "回到深海去！"
+DESCRIBE.OCUPUS_TENTACLE_EYE = "拍张照吧，能保存更久！"
+DESCRIBE.OCUPUS_TENTACLE_COOKED = "我讨厌海鲜。"
+
+DESCRIBE.ARMOR_REED_UM = "虽然脆弱，但很轻！"
+DESCRIBE.ARMOR_SHARKSUIT_UM = "它很重，而且让我看起来很傻。"
+DESCRIBE.ROCKJAWLEATHER = "它怎么能浮起来？"
+
+DESCRIBE.EYEOFTERROR_MINI_ALLY = DESCRIBE.EYEOFTERROR_MINI -- TODO!
+DESCRIBE.EYEOFTERROR_MINI_GROUNDED_ALLY = DESCRIBE.EYEOFTERROR_MINI_GROUNDED
+
+DESCRIBE.STUFFED_PEEPER_POPPERS = "那太恶心了！"
+DESCRIBE.UM_DEVILED_EGGS = "我的力量迫使你！"
+DESCRIBE.LUSH_ENTRANCE = "它杂草丛生……"
+DESCRIBE.CRITTER_FIGGY = "别咬我！走开！"
+DESCRIBE.GIANT_TREE_BIRDNEST = "哎呀，算了。"
+ACTIONFAIL.UPGRADE.NOT_HARVESTED = "应该有人把这里清理一下！"
+
+DESCRIBE.SLUDGE = "它黏糊糊的，闻起来像……恶心的东西。"
+DESCRIBE.SLUDGE_OIL = "这绝对不是饮料。"
+DESCRIBE.SLUDGE_SACK = "它会弄脏我的衣服……"
+DESCRIBE.CANNONBALL_SLUDGE_ITEM = "开火！开火！！"
+DESCRIBE.BOAT_BUMPER_SLUDGE = "碰碰车！就像嘉年华里的一样！"
+DESCRIBE.BOAT_BUMBER_SLUDGE_KIT = "我最擅长砌墙了。"
+DESCRIBE.BOATPATCH_SLUDGE = "把它塞住！"
+DESCRIBE.UM_COPPER_PIPE = "梆！"
+DESCRIBE.BRINE_BALM = "我最擅长这个了！"
+DESCRIBE.UNCOMPROMISING_FISHINGNET = "养我一辈子！"
+DESCRIBE.UM_AMBER = "我以前见过这样的糖果。"
+DESCRIBE.UM_BEEGUN = "蜜蜂，滚！"
+DESCRIBE.BULLETBEE = DESCRIBE.KILLERBEE
+DESCRIBE.CHERRYBULLETBEE = DESCRIBE.KILLERBEE
+DESCRIBE.SUNKENCHEST_ROYAL_RANDOM = "宝藏，配得上女王！"
+DESCRIBE.SUNKENCHEST_ROYAL_RED = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+DESCRIBE.SUNKENCHEST_ROYAL_BLUE = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+DESCRIBE.SUNKENCHEST_ROYAL_PURPLE = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+DESCRIBE.SUNKENCHEST_ROYAL_GREEN = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+DESCRIBE.SUNKENCHEST_ROYAL_ORANGE = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+DESCRIBE.SUNKENCHEST_ROYAL_YELLOW = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+DESCRIBE.SUNKENCHEST_ROYAL_RAINBOW = DESCRIBE.SUNKENCHEST_ROYAL_RANDOM
+
+DESCRIBE.STEERINGWHEEL_COPPER = "现在来抓我啊，条子们！"
+DESCRIBE.STEERINGWHEEL_COPPER_ITEM = "现在该把它放哪儿呢……"
+DESCRIBE.BOAT_BUMPER_COPPER = "希望它不会把船弄沉。"
+DESCRIBE.BOAT_BUMPER_COPPER_KIT = "撞得鼻青脸肿！"
+DESCRIBE.UM_DREAMCATCHER = "拿走我的噩梦吧，拿去。"
+DESCRIBE.UM_BRINEISHMOSS = "苔藓小姐。"
+DESCRIBE.UM_COALESCED_NIGHTMARE = "我的噩梦就是长这个样子吗？"
+DESCRIBE.SLUDGE_CORK = "把它塞住！"
+DESCRIBE.SLUDGESTACK = "那是什么东西？我不认识……"
+DESCRIBE.SPECTER_SHIPWRECK = "希望它闹鬼！"
+
+DESCRIBE.UNCOMPROMISING_HARPOON = "不。"
+DESCRIBE.UNCOMPROMISING_HARPOON_HEAVY = "不不不，它不是假的。"
+DESCRIBE.UNCOMPROMISING_HARPOONREEL = "不……"
+DESCRIBE.UM_MAGNERANG = "它有反向模式吗？"
+DESCRIBE.UM_MAGNERANGREEL = "我可不想被绑在一个地方。"
+DESCRIBE.SIREN_THRONE = "那是那个娇气小姐喜欢坐的地方。" -- Dumb kid.
+DESCRIBE.LAVASPIT_SLUDGE = "一大堆热乎乎的黏液。"
+
+DESCRIBE.UM_BEEGUARD_SHOOTER = DESCRIBE.BEEGUARD
+DESCRIBE.UM_BEEGUARD_SEEKER = DESCRIBE.BEEGUARD
+DESCRIBE.UM_BEEGUARD_BLOCKER =
+"那很好，我本来就没打算靠得太近！"
+
+DESCRIBE.PORTABLEBOAT_ITEM = "它就像游乐园里的充气城堡，但是很无聊。"
+DESCRIBE.MASTUPGRADE_WINDTURBINE_ITEM = "风替我干活！"
+
+DESCRIBE.WIXIE_PIANO = "我想念我的钢琴课了……"
+DESCRIBE.WIXIE_CLOCK = "至少它的滴答声不会让我彻夜难眠。"
+DESCRIBE.WIXIE_WARDROBE = "好吧，现在我知道是什么在发出那些噪音了……"
+DESCRIBE.CHARLES_T_HORSE = "查尔斯……？"
+DESCRIBE.THE_REAL_CHARLES_T_HORSE = "查尔斯！！我以为再也找不到你了！"
+
+DESCRIBE.UM_ORNAMENT_OPOSSUM = "我觉得我们有很多共同点！"
+DESCRIBE.UM_ORNAMENT_RAT = "挺可爱的，对于一只害虫来说。"
+
+DESCRIBE.TRINKET_WATHOM1 = "哈哈，真是个呆子！"
+
+DESCRIBE.CODEX_MANTRA = DESCRIBE.WAXWELLJOURNAL
+
+DESCRIBE.MARA_BOSS1 = "我要让你骨头嘎吱作响！"
+
+-- Pyre Nettle stuff
+DESCRIBE.UM_PYRE_NETTLES = "把手拿开，刺头！"
+DESCRIBE.UM_SMOLDER_SPORE = "嘿，尺寸正好！"
+ANNOUNCE.ANNOUNCE_SMOLDER_SPORE_EATEN = "啊！我讨厌辣的食物！"
+ANNOUNCE.ANNOUNCE_SMOLDER_SPORE_INVENTORY_POP = "是啊，我着火了！！救命！"
+DESCRIBE.UM_ARMOR_PYRE_NETTLES = "我想它能把别的东西挡在我身外……"
+DESCRIBE.UM_BLOWDART_PYRE = "它不如我的弹弓好用，但也能凑合。"
+
+
+-- Under the Weather Part 1
+DESCRIBE.ALPHA_LIGHTNINGGOAT = "咩！！！咩啊啊！"
+DESCRIBE.UM_TORNADO = "别扯我的丝带！"
+DESCRIBE.UM_WATERFALL = "真希望我穿着玩水的衣服！"
+ANNOUNCE.ANNOUNCE_UM_NO_TORNADO = "没有任何愚蠢的龙卷风能挡我的路！"
+
+-- Broiling Hills
+DESCRIBE.BOULDER_CRAB =
+{
+    GENERIC = "它不是一块石头！",
+    NAKED = "我为它感到难过。",
+}
+
+DESCRIBE.BOULDER_CRAB_HOLE = "这是个洞。"
+
+DESCRIBE.UM_HOTSPRING = "它是用熔岩加热的。"
+
+DESCRIBE.UM_PLANT_HOTSPRINGS = DESCRIBE.MARSH_PLANT --POND_ALGAE
+
+DESCRIBE.ROCK_LICHEN =
+{
+    GENERIC = "它们喜欢潮湿。",
+    PICKED = "菌落会及时重新生长。",
+}
+
+-- All things Snaildrake
+DESCRIBE.SNAILDRAKE_MAGMA = "它们似乎有爆炸性的脾气。"
+DESCRIBE.SNAILDRAKE_SLIME = DESCRIBE.SNAILDRAKE_MAGMA
+DESCRIBE.SNAPALM = "我不确定拿着这个是否安全。"
+DESCRIBE.SNAILDRAKEHAT = "它会弄乱我的头发。"
+DESCRIBE.SNAILDRAKEBUCKET =
+{
+    GENERIC = "看起来可以装东西。",
+    WATER = "我打了一桶蜗牛水。",
+    LAVA = "热东西。",
+}
+DESCRIBE.SNAILDRAKE_HOLE = "这只是个洞。"
+
+-- All things Rimeweed
+DESCRIBE.RIMEWEED_MAIN = "那棵杂草正在制造这片藤蔓丛生的混乱。"
+DESCRIBE.RIMEWEED_BARRIER = "看起来像一道带刺的冷锋。"
+
+DESCRIBE.UM_RIMEWEED_ITEMVINE = "它又刺又冷。"
+DESCRIBE.UM_RIMEWEED_ITEMFLOWER = "它出奇地茁壮。"
+
+DESCRIBE.RIMEWEED_WHIP = "我会站在挥舞它的那一头。"
+
+DESCRIBE.UM_RIMEWEED_TEQUILA = "太冷了，没法享用。"
+DESCRIBE.UM_RIMEWEED_SPAGETT = "脆脆的意大利面，不是我的首选。"
+
+-- Lava Caves
+DESCRIBE.MAGMAROCK1 = DESCRIBE.ROCKS
+DESCRIBE.MAGMABONE = "不知道虫子有没有啃过它。"
+
+DESCRIBE.UM_COOKPOT_WAGSTAFF = {
+    EMPTY = "嗨，斯克林布斯", --Carlos: Hiiiii
+    COOKING_LONG = DESCRIBE.COOKPOT.COOKING_LONG,
+    COOKING_SHORT = DESCRIBE.COOKPOT.COOKING_SHORT,
+    DONE = DESCRIBE.COOKPOT.DONE,
+    BURNT = DESCRIBE.COOKPOT.BURNT,
+}
+DESCRIBE.UM_COOKPOT_WAGSTAFF_DISPLAY = "嗯……多么有趣的展示。"
+DESCRIBE.UM_COOKPOT_WAGSTAFF_LEVER = "让我再试一次新食谱。"
+DESCRIBE.UM_COOKPOT_WAGSTAFF_LEVER2 = "这个食谱就这么定了。"
+
+DESCRIBE.UM_RICE_PUDDING = "甜甜的沼泽植物糊，好吃！"
+
+local general_scripts = require("play_generalscripts")
+
+STRINGS.STAGEACTOR.WIXIE1 = {
+    "那个所谓的‘科学家’怎么样？",
+    "“我所有的实验都爆炸了？这才叫科学！”",
+    "还有那个闷闷不乐的哭泣女孩？",
+    "“哦，我好惨啊！我有个鬼姐姐！我好惨啊！”",
+    "还有别跟我提那个讨厌的童子军……",
+    "“大家小心，火很危险！嘿，想看我的虫子吗？！”",
+    "谢谢，谢谢，我会在这里待到永恒。", "给你的牛一点小费！"
+}
+
+general_scripts.WIXIE1 = {
+    cast = { "wixie" },
+    lines = {
+        { roles = { "wixie" }, duration = 3.0, line = STRINGS.STAGEACTOR.WIXIE1[1] },
+        {
+            roles = { "wixie" },
+            duration = 3.5,
+            line = STRINGS.STAGEACTOR.WIXIE1[2],
+            anim = "idle_wilson"
+        },
+        { roles = { "wixie" }, duration = 2.5, line = STRINGS.STAGEACTOR.WIXIE1[3] },
+        {
+            roles = { "wixie" },
+            duration = 4,
+            line = STRINGS.STAGEACTOR.WIXIE1[4],
+            anim = "idle_wendy"
+        },
+        { roles = { "wixie" }, duration = 3.0, line = STRINGS.STAGEACTOR.WIXIE1[5] },
+        {
+            roles = { "wixie" },
+            duration = 4.0,
+            line = STRINGS.STAGEACTOR.WIXIE1[6],
+            anim = "idle_walter"
+        },
+        { roles = { "wixie" }, duration = 3.0, line = STRINGS.STAGEACTOR.WIXIE1[7] },
+        {
+            roles = { "wixie" },
+            duration = 1.5,
+            line = STRINGS.STAGEACTOR.WIXIE1[8],
+            anim = "emote_jumpcheer"
+        }
+    }
+}
+--[[
+    STRINGS.STAGEACTOR.WIXIE2 =
+        {
+            "There once was a man named Maxwell.",
+            "He .",
+            "The Mime follows suit, tumbling to the ground.",
+            "The Strongmans head makes a hollow *thunk*, and he says;",
+            "\"Me no understand this \"slap-stick\" stuff!\"",
+            "...",
+            "Hello? Is this thing on?",
+        }
+
+    general_scripts.WIXIE2 = {
+        cast = { "wixie" },
+        lines = {
+            {roles = {"wixie"},     duration = 5.0, line = STRINGS.STAGEACTOR.WIXIE2[1]},
+            {roles = {"wixie"},     duration = 3.5, line = STRINGS.STAGEACTOR.WIXIE2[2]},
+            {roles = {"wixie"},     duration = 3.0, line = STRINGS.STAGEACTOR.WIXIE2[3]},
+            {roles = {"wixie"},     duration = 3.5, line = STRINGS.STAGEACTOR.WIXIE2[4]},
+            {roles = {"wixie"},     duration = 4.0, line = STRINGS.STAGEACTOR.WIXIE2[5]},
+            {roles = {"wixie"},     duration = 2.0, line = STRINGS.STAGEACTOR.WIXIE2[6], anim = "emote_impatient"},
+            {roles = {"wixie"},     duration = 2.0, line = STRINGS.STAGEACTOR.WIXIE2[7], anim = "emote_impatient"},
+        }
+    }]]
+
+DESCRIBE.UM_BOATBOTTLE = {
+    FULL = "这是给老年人玩的玩具之一。",
+    EMPTY = "船卡在这该死的瓶子里，我怎么玩？"
+}
+
+ANNOUNCE.ANNOUNCE_BUTTERFLY_SLIP = {"你在开玩笑吧！",
+    "我不会让一只愚蠢的虫子占上风的！",
+    "坐好！我不会打你的，我保证！",
+    "来吧，休息一下。所有的花都告诉我它们想你了。",
+    "也许我假装不在乎，然后砰！"}
+
+DESCRIBE.WATHOM_CORPSE = "如果你再站起来，我就给你好吃的！"
+
+DESCRIBE.WATHGRITHR_SHIELD_DREADSTONE = "你除了石头就没别的更好的东西了吗？"
+ANNOUNCE.ANNOUNCE_WEAPON_TOOWEAK_ICESHIELD = "嘿！用冰当盾牌不公平！"
