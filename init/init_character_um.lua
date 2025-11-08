@@ -58,7 +58,7 @@ AddPrefabPostInit("wixie", function(inst)
         modimport("wixie_postinit/wixie_strings")
     end)
 
-    inst:DoTaskInTime(2, function ()
-        modimport("scripts/wixie_skilltree_strings")
-    end)
+    -- inst:DoTaskInTime(2, function ()
+    --     modimport("scripts/wixie_skilltree_strings")     -- 已经合并挪进skilltreestrings
+    -- end)
 end)

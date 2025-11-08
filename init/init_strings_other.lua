@@ -43,6 +43,7 @@ local webbedcreatures_names = {
     ["Feathery Cocoon"] = "轻软虫茧",
     ["Scaly Cocoon"] = "带鳞虫茧",
     ["Leafy Cocoon"]= "带叶虫茧",
+    ["Shrouded Cocoon"] = "幽影虫茧",
 }
 
 AddPrefabPostInit("webbedcreature", function(inst)
