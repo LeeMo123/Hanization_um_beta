@@ -75,3 +75,6 @@ if TUNING.DSTU and TUNING.DSTU.WOLFGANG_HUNGERMIGHTY then
     STRINGS.ACTIONS.MIGHTYJUMP  = "飞跃"
     STRINGS.ACTIONS.MIGHTYSWING = "强力打击"
 end
+
+-- wortox技能树改动
+modimport("init/init_character_changes/skilltree_wortox") -- Import New Wortox Tree

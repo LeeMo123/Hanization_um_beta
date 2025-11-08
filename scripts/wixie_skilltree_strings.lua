@@ -1,5 +1,5 @@
-print("wixie_skilltree_strings.lua loaded")
-
+local STRINGS = GLOBAL.STRINGS
+-- STRINGS.SKILLTREE.WIXIE.WIXIE_AMMOCRAFT_3_DESC = "特殊弹药的制作数量增加5个。"
 STRINGS.SKILLTREE.WIXIE = {
 	WIXIE_TAUNT_1_TITLE = "嘲讽 等级I",
 	WIXIE_TAUNT_1_DESC = "嘲讽敌人，使其受到的伤害提高10%，但移动速度增加15%！",
@@ -51,3 +51,20 @@ STRINGS.SKILLTREE.WIXIE = {
 	WIXIE_ALLEGIANCE_LUNAR_TITLE = "梦境入侵者",
 	WIXIE_ALLEGIANCE_LUNAR_DESC = "解锁制作“克莱尔”、明亮黑曜石外壳弹和纯粹光辉弹的能力。\n“克莱尔”的美术资源尚未完成！！",
 }
+
+local function chzation(charater, stringsTable)
+    local skilltree_defs = require("prefabs/skilltree_defs")
+
+	if not skilltree_defs.SKILLTREE_DEFS[charater] then
+		return
+	end
+
+	for skill_name, skill_data in pairs(skilltree_defs.SKILLTREE_DEFS[charater]) do
+		local skill_name_upper = string.upper(skill_name)
+
+		skill_data.desc = stringsTable[skill_name_upper.."_DESC"]
+		skill_data.title = stringsTable[skill_name_upper.."_TITLE"]
+	end
+end
+
+chzation("wixie", STRINGS.SKILLTREE.WIXIE)

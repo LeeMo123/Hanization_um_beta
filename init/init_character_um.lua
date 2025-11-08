@@ -36,6 +36,10 @@ AddPrefabPostInit("wathom", function(inst)
     inst:DoTaskInTime(0, function ()
         modimport("init/init_descriptions/wathom")
     end)
+
+    inst:DoTaskInTime(2, function ()
+        modimport("init/init_descriptions/skilltreestrings")
+    end)
 end)
 
 -- 老鼠人 winky汉化
@@ -45,7 +49,7 @@ AddPrefabPostInit("winky", function(inst)
     end)
 end)
 
--- 弹弓妹 黑妹  wixie汉化
+-- 弹弓妹 wixie汉化
 AddPrefabPostInit("wixie", function(inst)
     GLOBAL.STRINGS.ACTIONS.WIXIE_SLINGSHOT = "射击"
     GLOBAL.STRINGS.ACTIONS.WIXIE_TAUNT = "嘲讽!"
@@ -54,7 +58,7 @@ AddPrefabPostInit("wixie", function(inst)
         modimport("wixie_postinit/wixie_strings")
     end)
 
-    inst:DoTaskInTime(1, function ()
-        require("wixie_skilltree_strings")
+    inst:DoTaskInTime(2, function ()
+        modimport("scripts/wixie_skilltree_strings")
     end)
 end)
