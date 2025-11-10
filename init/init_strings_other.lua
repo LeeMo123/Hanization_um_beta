@@ -45,12 +45,11 @@ local webbedcreatures_names = {
     ["Leafy Cocoon"]= "带叶虫茧",
     ["Shrouded Cocoon"] = "幽影虫茧",
 }
-
 AddPrefabPostInit("webbedcreature", function(inst)
     inst:DoTaskInTime(1,function()
         if inst.components.named and inst.components.named.name then
             local original_name = inst.components.named.name
-            print("original_name:", original_name)
+            -- print("original_name:", original_name)
             -- 查找映射表，存在对应翻译则替换
             local translated_name = webbedcreatures_names[original_name]
             if translated_name then
@@ -59,3 +58,55 @@ AddPrefabPostInit("webbedcreature", function(inst)
         end     
     end)
 end)
+
+-- 宝石装备
+local modifiers = {
+    -- Greens
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYGREENGEM1,
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYGREENGEM2,
+
+    -- Yellows
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYYELLOWGEM1,
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYYELLOWGEM2,
+
+    -- Clears
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYPALEGEM1,
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYPALEGEM2,
+
+    -- Reds
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYREDGEM1,
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYREDGEM2,
+
+    -- Purples
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYPURPLEGEM1,
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYPURPLEGEM2, 
+
+    -- Oranges
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYORANGEGEM1,
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYORANGEGEM2,
+
+    -- Blues
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYBLUEGEM1,
+    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYBLUEGEM2,
+}
+
+local _GetAdjectivedName = EntityScript.GetAdjectivedName
+function EntityScript:GetAdjectivedName(...)
+    local name = self:GetBasicDisplayName()
+    local equippable = self.replica.equippable
+    local minerologyable = self.replica.minerologyable
+    if equippable ~= nil then
+        local eslot = equippable:EquipSlot()
+        if eslot == EQUIPSLOTS.HANDS and minerologyable and minerologyable._enchantnum and minerologyable._enchantnum:value() and minerologyable._enchantnum:value() ~= 0 then
+            if not self.no_wet_prefix and (self.always_wet_prefix or self:GetIsWet()) then
+                print("minerologyable._enchantnum:value():", minerologyable._enchantnum:value())
+                return ConstructAdjectivedName(self, name, STRINGS.WET_PREFIX.TOOL.." "..modifiers[minerologyable._enchantnum:value()])
+            else
+                print("minerologyable._enchantnum:value():", minerologyable._enchantnum:value())
+                return ConstructAdjectivedName(self, name, modifiers[minerologyable._enchantnum:value()])
+            end
+        end
+    end
+
+    return _GetAdjectivedName(self, ...)
+end

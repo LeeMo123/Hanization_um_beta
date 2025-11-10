@@ -244,7 +244,8 @@ STRINGS.TIDDLESTRANGER_RNE_FAREWELL = {
 		"如果我是你，我会在身边常置一盏灯，擦亮眼睛和耳朵，注意周围的一切。",
 	},
 }
-STRINGS.TIDDLESTRANGER_RNE_ENDSPEECH = { "你戴上就知道了。", "我觉得你戴上会很好看，试试吧。", "没有任何后果，穿上它吧！" }
+STRINGS.TIDDLESTRANGER_RNE_ENDSPEECH = { "你戴上就知道了。", 
+	"我觉得你戴上会很好看，试试吧。", "没有任何后果，穿上它吧！" }
 
 STRINGS.TIDDLESTRANGER_RNE_SCENARIO = {
 	METEOR = {
