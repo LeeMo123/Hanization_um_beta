@@ -28,6 +28,9 @@ AddPrefabPostInit("world", function(inst)
     STRINGS.CHARACTER_QUOTES.wathom = "\"我捕捉到你的呼吸了。\""
     STRINGS.CHARACTER_SURVIVABILITY.wathom = "渺茫"
 
+    inst:DoTaskInTime(1, function ()
+        modimport("init/init_descriptions/skilltreestrings")
+    end)
     
 end)
 
@@ -35,10 +38,6 @@ end)
 AddPrefabPostInit("wathom", function(inst)
     inst:DoTaskInTime(0, function ()
         modimport("init/init_descriptions/wathom")
-    end)
-
-    inst:DoTaskInTime(2, function ()
-        modimport("init/init_descriptions/skilltreestrings")
     end)
 end)
 
@@ -57,8 +56,4 @@ AddPrefabPostInit("wixie", function(inst)
     inst:DoTaskInTime(0, function ()
         modimport("wixie_postinit/wixie_strings")
     end)
-
-    -- inst:DoTaskInTime(2, function ()
-    --     modimport("scripts/wixie_skilltree_strings")     -- 已经合并挪进skilltreestrings
-    -- end)
 end)

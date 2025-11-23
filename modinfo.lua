@@ -11,7 +11,7 @@ QQ交流群：650560931
 ]]
 author = "郎溪小杰哥、不懂英文的白、不笑猫、去码头整点薯条"
 
-version = "20251110"
+version = "20251123"
 
 forumthread = ""
 
@@ -28,7 +28,7 @@ mod_dependencies = { { workshop = "workshop-3193922031"} }
 
 all_clients_require_mod = true 
 
-icon_atlas = "modicon.xml"
+icon_atlas = "images/modicon.xml"
 icon = "modicon.tex"
 
 -- 服务器标签

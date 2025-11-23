@@ -110,3 +110,9 @@ function EntityScript:GetAdjectivedName(...)
 
     return _GetAdjectivedName(self, ...)
 end
+
+-- 动作/容器等类的汉化
+STRINGS.ACTIONS.SCAN_GEMOLOGY_GEM = "检查"
+
+local containers = require("containers")
+containers.params.um_cookpot_wagstaff.widget.buttoninfo.text = "烹饪"

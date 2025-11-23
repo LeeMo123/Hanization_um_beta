@@ -34,9 +34,9 @@ STRINGS.ACTIONS.CREATE_BURROW = "挖洞"
 STRINGS.ACTIONS.ACTIVATE.RECRUITRAT = "招募"
 
 STRINGS.ACTIONS.UM_ACTIVATABLE_ITEM = {
-            GENERIC = "Use",
+            GENERIC = "使用",
             PONDER = "Ponder",
-            MORPH = "Morph",
+            MORPH = "变形",
         }
 
 STRINGS.ACTIONS.TURNOFF.HARPOON = "折断卷线"
