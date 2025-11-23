@@ -1,3 +1,4 @@
+local upvaluehelper = require("hooks/upvaluehelper")
 ----------------------------------------------------------------
 ---
 ---  将杂七杂八的string挪到这
@@ -89,7 +90,6 @@ local modifiers = {
     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYBLUEGEM1,
     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYBLUEGEM2,
 }
-
 local _GetAdjectivedName = EntityScript.GetAdjectivedName
 function EntityScript:GetAdjectivedName(...)
     local name = self:GetBasicDisplayName()
@@ -111,8 +111,19 @@ function EntityScript:GetAdjectivedName(...)
     return _GetAdjectivedName(self, ...)
 end
 
+-- 通用引爆器 引爆动作
+AddPrefabPostInit("um_detonator", function(inst)
+    local onselect = inst.components.spellbook and inst.components.spellbook.items and inst.components.spellbook.items[1] and inst.components.spellbook.items[1].onselect
+    inst.components.spellbook.items[1].onselect = function(inst)
+        print("触发引爆器")
+        onselect(inst)
+        inst.components.spellbook:SetSpellName("引爆")
+    end
+end)
+
 -- 动作/容器等类的汉化
 STRINGS.ACTIONS.SCAN_GEMOLOGY_GEM = "检查"
+STRINGS.ACTIONS.UM_GUNSHOOTY = "发射"
 
 local containers = require("containers")
 containers.params.um_cookpot_wagstaff.widget.buttoninfo.text = "烹饪"
