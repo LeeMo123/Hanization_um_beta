@@ -54,7 +54,7 @@ STRINGS.ACTIONS.CASTSPELL.SLINGSHOT = "射击"
 STRINGS.ACTIONS.CASTSPELL.WIXIE_SLING = "投掷"
 STRINGS.ACTIONS.ACTIVATE.UM_TORNADOTRACKER = "定位龙卷风 -"
 STRINGS.ACTIONS.CASTAOE.WATHGRITHR_SHIELD_DREADSTONE = STRINGS.ACTIONS.CASTAOE.WATHGRITHR_SHIELD
-STRINGS.UI.HUD.UM_VETSKULL_GENERIC = "老兵的诅咒：\n - 受到攻击时承受更多伤害。\n - 饥饿值下降更快。\n - 食物恢复的生命与理智会以*缓慢*的方式逐步生效。"
+STRINGS.UI.HUD.UM_VETSKULL_GENERIC = "老兵诅咒：\n - 受到攻击时承受更多伤害。\n - 饥饿值下降更快。\n - 食物恢复的生命与理智会以*缓慢*的方式逐步生效。"
 STRINGS.UI.HUD.UM_VETSKULL = {
 	DEFAULT = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
 	WILLOW = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
@@ -63,29 +63,29 @@ STRINGS.UI.HUD.UM_VETSKULL = {
 	WX78 = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
 	WICKERBOTTOM = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
 	WOODIE = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
-	WES = "老兵的诅咒：\n - 韦斯必死。",
+	WES = "老兵诅咒：\n - 韦斯必死。",
 	WAXWELL = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
 	WATHGRITHR = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
 	WEBBER = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
 	WINONA = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
 	WARLY = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
 	WORTOX = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
-	WORMWOOD = "老兵的诅咒：\n - 治疗物品恢复的生命会以*缓慢*的方式分步生效。\n - 受到攻击或火焰会中断该恢复。",
+	WORMWOOD = "老兵诅咒：\n - 治疗物品恢复的生命会以*缓慢*的方式分步生效。\n - 受到攻击或火焰伤害会中断该恢复。",
 	WURT = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
-	WALTER = "老兵的诅咒：\n - 受到的伤害同时附带最大理智惩罚。\n - 若不再受伤，该惩罚会随时间缓解。",
-	WANDA = "老兵的诅咒：\n - 受到伤害时加速老化。\n - 饥饿下降更快。\n - 食物恢复的理智以*缓慢*方式分步生效。",
+	WALTER = "老兵诅咒：\n - 受到的伤害同时附带最大理智惩罚。\n - 若不再受伤，该惩罚会随时间缓解。",
+	WANDA = "老兵诅咒：\n - 受到伤害时加速老化。\n - 饥饿下降更快。\n - 食物恢复的理智以*缓慢*方式分步生效。",
 	WINKY = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
 	WATHOM = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
 	WIXIE = STRINGS.UI.HUD.UM_VETSKULL_GENERIC,
 }
 STRINGS.UI.HUD.UM_VETSKULL_VETSITEMS = "\n - 可以装备某些巨兽掉落的诅咒物品。"
-STRINGS.VETS_WIDGET_WES = "老兵的诅咒：\n - 韦斯必死。"
-STRINGS.VETS_WIDGET_WANDA = "老兵的诅咒：\n - 受到伤害时加速老化。\n - 饥饿下降更快。\n - 食物恢复的理智以*缓慢*方式分步生效。\n - 可装备某些巨兽掉落的诅咒物品。"
-STRINGS.VETS_WIDGET = "你已被老兵的诅咒侵扰。\n按「I」或点击装备栏旁的图标\n在“查看自身”中查看效果。\n点击此处可隐藏该图标。"
+STRINGS.VETS_WIDGET_WES = "老兵诅咒：\n - 韦斯必须死。"
+STRINGS.VETS_WIDGET_WANDA = "老兵诅咒：\n - 受到伤害时加速老化。\n - 饥饿下降更快。\n - 食物恢复的理智以*缓慢*方式分步生效。\n - 可装备某些巨兽掉落的诅咒物品。"
+STRINGS.VETS_WIDGET = "你已被老兵诅咒侵袭。\n按「I」或点击装备栏旁的图标\n在“查看自身”中查看效果。\n点击此处可隐藏该图标。"
 STRINGS.VETS_CONFIRMED_TITLE = "你已做出选择。"
 STRINGS.VETS_CONFIRMED = "现在你必须承受后果..."
-STRINGS.VETS_TITLE = "老兵的诅咒。"
-STRINGS.VETS = "你即将被一种削弱性的诅咒所附身。\n永恒将更加严苛地对待你，\n但幸运往往眷顾大胆（或愚蠢）的人！\n\n再次触碰骷髅以封印你的命运。"
+STRINGS.VETS_TITLE = "老兵诅咒。"
+STRINGS.VETS = "你即将被一种削弱性的诅咒所附身。\n永恒大陆将更加严苛地对待你，\n但幸运往往眷顾大胆（或愚蠢）的人！\n\n再次触碰骷髅以确定你的命运。"
 STRINGS.VETS_OK = "确定"
 
 STRINGS.UI.CRAFTING.NEEDSVETERANSHRINE_ONE = "需要一些……更黑暗的东西。"
@@ -94,7 +94,7 @@ STRINGS.UI.CRAFTING.RECIPEACTION.UM_WAXWELL_SUMMON = "召唤"
 STRINGS.VETSKULL_TITLE = "老兵的头骨"
 STRINGS.VETSKULL = {
 	--DEFAULT = "Return this skull to the Veterans Shrine\nYou will gain access to new items, but will be cursed.\nCurse Effects:\n-\n",
-	DEFAULT = "把这个头骨带回老兵神坛\n诅咒效果：",
+	DEFAULT = "把这个头骨带回头骨洞窟\n诅咒效果：",
 	WILSON = "死亡会使属性损失增加 10%，最多可叠加至 50%。",
 	WALTER = "战斗中受到的伤害增加 50%\n该伤害会随时间分段造成，可用治疗物品缓解。",
 	WORTOX = "被击杀的敌人会掉落爆裂灵魂。\n这些灵魂会根据被杀敌人的最大生命值造成伤害。",
@@ -103,7 +103,7 @@ STRINGS.VETSKULL = {
 	WARLY = "超过最大饥饿值的回复会使你昏昏欲睡。",
 	WINKY = "丢弃或损坏物品会对你造成伤害。\n……真糟糕。",
 	WICKERBOTTOM = "长时间不睡觉最终会导致你昏厥。",
-	WIXIE = "击杀无辜生物时可能会召唤敌对的克兰皮。",
+	WIXIE = "击杀无辜生物时可能会召唤多只敌对的坎普斯。",
 	WOODIE = "……？",
 	WOLFGANG = "饥饿会随时间慢慢恢复。\n低于 50% 饥饿时开始承受伤害惩罚。\n低于 30% 时开始受到速度惩罚。",
 	WANDA = "被杀死的敌人有概率产出噩梦生物。\n概率基于缺失的理智值。",
@@ -115,8 +115,8 @@ STRINGS.VETSKULL = {
 STRINGS.PACTSWORN_TITLE = "暗影契约"
 STRINGS.PACTSWORN_TEXT = "如果你放弃暗影密典，一条全新道路就在你面前。你将失去法术并受到 25% 的额外伤害，但你将获得可召唤的剑、盔甲和真正的经典暗影。\n此操作无法撤销。"
 
-STRINGS.PIG_REMEMBER_THREAT = { "记得你！", "你伤害了我们！", "你这家伙！" }
-STRINGS.PIG_GUARD_PIGKING_TALK_LOOKATWILSON = { "老实点", "我盯着你", "你，老实点", "要盯着你" }
+STRINGS.PIG_REMEMBER_THREAT = { "记得你！", "你伤害了我们！", "你这坏人！" }
+STRINGS.PIG_GUARD_PIGKING_TALK_LOOKATWILSON = { "不准拆家", "我们盯着你", "你，老实点", "要盯着你" }
 STRINGS.PIG_GUARD_PIGKING_TALK_LOOKATWILSON_NIGHT = { "国王入睡，闲人避退", "立即离开", "留下来就要挨揍", "王，眠。你，爬" }
 STRINGS.PIG_GUARD_PIGKING_TALK_LOOKATWILSON_EVENING = { "王的睡眠时间，立刻离开", "不要打扰王的睡眠", "王需要一个美觉，速速离去", "快天黑了，速速离去" }
 STRINGS.PIG_GUARD_PIGKING_TALK_LOOKATWILSON_FRIEND = { "王的指令", "保护你", "哪里有怪物？", "保卫！", "守护国王！", "守卫朋友！" }
@@ -142,7 +142,7 @@ if TUNING.DSTU and TUNING.DSTU.WAXWELL then
 	STRINGS.CHARACTER_DESCRIPTIONS.waxwell = STRINGS.CHARACTER_DESCRIPTIONS.waxwell .. "\n󰀕可学会召唤暗影装备" --"\n󰀕Can make a pact to regain his old tricks"
 end
 if TUNING.DSTU and TUNING.DSTU.WOLFGANG_HUNGERMIGHTY then
-	STRINGS.CHARACTER_DESCRIPTIONS.wolfgang = "󰀕饱腹时更强壮\n󰀕被喂养且情绪平静时会变得更强\n󰀕非常爱出风头\n*害怕怪物与黑暗"
+	STRINGS.CHARACTER_DESCRIPTIONS.wolfgang = "󰀕饱腹时更强壮\n󰀕喂得饱精神好的时候会变得更强\n󰀕非常爱出风头\n*害怕怪物与黑暗"
 end
 if TUNING.DSTU and TUNING.DSTU.WARLY_CHANGES ~= 0 then
 	STRINGS.CHARACTER_DESCRIPTIONS.warly = STRINGS.CHARACTER_DESCRIPTIONS.warly ..
@@ -155,7 +155,7 @@ if TUNING.DSTU and TUNING.DSTU.WORTOXCHANGES then
 	STRINGS.CHARACTER_DESCRIPTIONS.wortox = STRINGS.CHARACTER_DESCRIPTIONS.wortox .. "\n󰀕灵魂恢复需要时间\n󰀕某些弱小生物没有灵魂"
 end
 -- if TUNING.DSTU and TUNING.DSTU.("wigfrid") then
---     STRINGS.CHARACTER_DESCRIPTIONS.wathgrithr = STRINGS.CHARACTER_DESCRIPTIONS.wathgrithr .. "\n󰀕Combat is less sustaining"
+--     STRINGS.CHARACTER_DESCRIPTIONS.wathgrithr = STRINGS.CHARACTER_DESCRIPTIONS.wathgrithr .. "\n󰀕战斗续航更差"
 -- end
 if TUNING.DSTU.WORMWOOD_CONFIG_FIRE then
 	STRINGS.CHARACTER_DESCRIPTIONS.wormwood = STRINGS.CHARACTER_DESCRIPTIONS.wormwood .. "\n󰀕极其易燃"
@@ -163,13 +163,12 @@ end
 
 --I also did something! I love mod compatibility :) -CarlosBraw
 if GLOBAL.KnownModIndex:IsModEnabled("workshop-2010472942") then
-	STRINGS.CHARACTER_DESCRIPTIONS.wragonfly = STRINGS.CHARACTER_DESCRIPTIONS.wragonfly .. "\n󰀕能在夏季的烟雾中呼吸"
+	STRINGS.CHARACTER_DESCRIPTIONS.wragonfly = STRINGS.CHARACTER_DESCRIPTIONS.wragonfly .. "\n󰀕能在夏季的浓烟中呼吸"
 	STRINGS.CHARACTER_DESCRIPTIONS.weerclops = STRINGS.CHARACTER_DESCRIPTIONS.weerclops .. "\n󰀕不被冬季强风减速\n󰀕非常适应雪地"
 end
 if GLOBAL.KnownModIndex:IsModEnabled("workshop-1847716441") then
-	STRINGS.CHARACTER_DESCRIPTIONS.plaguedoctor = STRINGS.CHARACTER_DESCRIPTIONS.plaguedoctor .. "\n󰀕面具可防护烟雾"
+	STRINGS.CHARACTER_DESCRIPTIONS.plaguedoctor = STRINGS.CHARACTER_DESCRIPTIONS.plaguedoctor .. "\n󰀕面具可抵御浓烟"
 end
-
 
 
 STRINGS.STANTON_GREET = { "想和亡者喝一杯吗？", "喝一杯如何？", "来和我共饮。" }
@@ -218,7 +217,7 @@ STRINGS.CHARACTERS.WILLOW.DESCRIBE.TIDDLESTRANGER_RNE = "你到底是谁？"
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.TIDDLESTRANGER_RNE = "一个令人毛骨悚然的怪人。"
 STRINGS.CHARACTERS.WATHGRITHR.DESCRIBE.TIDDLESTRANGER_RNE = "一个诡异的先知！"
 STRINGS.CHARACTERS.WORMWOOD.DESCRIBE.TIDDLESTRANGER_RNE = "来帮忙的朋友"
-STRINGS.CHARACTERS.WURT.DESCRIBE.TIDDLESTRANGER_RNE = "弗浪噗。 危险的陌生人。"
+STRINGS.CHARACTERS.WURT.DESCRIBE.TIDDLESTRANGER_RNE = "浮浪噗。 危险的陌生人。"
 STRINGS.CHARACTERS.WARLY.DESCRIBE.TIDDLESTRANGER_RNE = "你好, 呃... 请问尊姓大名？"
 STRINGS.CHARACTERS.WORTOX.DESCRIBE.TIDDLESTRANGER_RNE = "一个骗子！"
 STRINGS.CHARACTERS.WINONA.DESCRIBE.TIDDLESTRANGER_RNE = "这肩膀看起来不像是真实的。"
@@ -579,8 +578,8 @@ STRINGS.UM_LOADINGTIPS = {
 	SURVIVORCOCOONS = "兜帽寡妇似乎对幸存者产生了兴趣，甚至将他们包裹在更大的茧中，留待稍后慢慢吞噬。",
 	MONSTERMEAT_DILUTION = "\"在我的菜谱里很难使用怪物肉，但今天我发现了解决办法！只要用适量的健康肉似乎就能完全稀释毒性。\" - W",
 	MONSTERMEAT_DRYING = "\"有人告诉我把怪物肉晾干后在烹饪时会稍微不那么有毒。那个小童子军年纪虽小但知道的真多。\" - W",
-	MONSTERMEAT_WEREPIGS = "\"冰箱里放这么多怪物小块真是太过分了！虽然冒险，但我们应该派人去喂猪人。也许由薇格弗里德去。沃尔夫冈肯定太害怕了。\" - W",
-	MONSTERMEAT_KABOBS = "\"听起来像胡说，但出人意料的是，把怪物肉串着烤来吃并不那么糟糕。要感谢老式的肉串，它能让我们避免把健康肉浪费在这道菜上。\" - W",
+	MONSTERMEAT_WEREPIGS = "\"冰箱里放这么多小怪物肉真是太过分了！虽然冒险，但我们应该派人去喂猪人。也许由薇格弗德去。沃尔夫冈肯定太害怕了。\" - W",
+	MONSTERMEAT_KABOBS = "\"听起来像胡说，但出人意料的是，把怪物肉串着烤来吃并不那么糟糕。要感谢老式的肉串，它能让我们避免把好肉浪费在这道菜上。\" - W",
 
 	--工具提示
 	--如果我们能得到其中一些的人物名言，我会更愿意。
@@ -600,7 +599,7 @@ STRINGS.UM_LOADINGTIPS = {
 	PIGGYPACK = "小猪背包基于存储了多少物品来降低移动速度。",
 	PREMIUMWATERINGCAN = "鸟嘴壶里可以储存和保鲜鱼。",
 	TURF_DRAGONFLY = "龙鳞地板可以防止积雪。",
-	BLOWDART_YELLOW = "雷电吹箭可以击晕机械敌人。",
+	BLOWDART_YELLOW = "闪电吹箭可以击晕机械敌人。",
 	DRAGONFLY_CHEST = "龙鳞宝箱现在共有 25 个格子，可能会杀死第一只试图从中偷窃的老鼠。",
 	BANDAGE = "蜂蜜药膏可额外缓慢恢复 15 点生命值。",
 	MULTITOOL = "多用斧镐在使用时会产生冲击波，破坏附近的岩石与树木。",
@@ -610,8 +609,8 @@ STRINGS.UM_LOADINGTIPS = {
 	FIREDART = "火焰吹箭非常炎热。",
 	BEEMINE = "蜜蜂地雷有 5 次使用耐久，可以释放速度更快、更脆弱的蜜蜂。",
 	FIRESUPRESSOR = "雪球发射器的“紧急模式”对附近的火灾反应更快，且更加智能。",
-	CANNONS = "大炮现在火力增强并且可以发射种子壳。",
-	PIRATELEAKS = "在月亮码头海盗的船上制造任何漏洞都会导致他们撤退。用种子壳同理！",
+	CANNONS = "大炮现在火力增强并且可以发射种壳。",
+	PIRATELEAKS = "在月亮码头海盗的船上制造任何漏洞都会导致他们撤退。用种壳同理！",
 	TRIDENT = "刺耳三叉戟拥有更强大的法术，并且可以造成多段打击。",
 	FAVORITE_FOOD = "冒险家们最喜欢的食物可以为他们恢复少许理智。",
 	LAZY_DESERTER = "懒人护符在也是一个懒人的采集者！请确保保持理智。",
@@ -619,9 +618,9 @@ STRINGS.UM_LOADINGTIPS = {
 	THERMAL_STONE = "穿着舒适的衣服时，暖石会变得更“有温度”，反之，则效果会更差。",
 	LIFE_AMULET = "鬼魂不再能作祟重生护符来复活了。除非...护身符是那些稀有且古老的品种。",
 	PEARL_SHOP = "珍珠的商店种类更多了，还有更多的小玩意儿可以卖。",
-	FEATHER_FROCK = "驼鹿/鹅掉落的羽毛外套使用羽毛产生特殊效果：对敌人造成伤害、提升移动速度并吸收一定量的伤害！老兵的诅咒在等待着你……",
-	MOONFLY_LANTERN = "来自月蚀龙蝇的月光灯能提升你的移动速度，同时在你身后留下发光轨迹，也能加速队友！老兵的诅咒在等待着你……",
-	SILKEN_SACK = "来自兜帽寡妇的绸缎袋是一个每天生成丝线的背包，也可以用丝线将物品打包保存！老兵的诅咒在等待着你...",
+	FEATHER_FROCK = "驼鹿/鹅掉落的羽毛外套使用羽毛产生特殊效果：对敌人造成伤害、提升移动速度并吸收一定量的伤害！老兵诅咒在等待着你……",
+	MOONFLY_LANTERN = "来自月亮龙蝇的月光灯能提升你的移动速度，同时在你身后留下发光轨迹，也能加速队友！老兵诅咒在等待着你……",
+	SILKEN_SACK = "来自兜帽寡妇的蛛丝背包是一个每天生成蜘蛛丝的背包，也可以用丝线将物品打包保存！老兵诅咒在等待着你...",
 
 	--character specific
 	WARLY_BUTCHER = "\"作为朋友，沃利是非常称职的。我近来抓过一些活的小动物给他。看到他的刀工极为精湛。\" - W",
