@@ -86,7 +86,6 @@ STRINGS.UNCOMP_TOOLTIP = {
     UM_MAXWELL_ARMOR_SANITY = "- 生成临时暗影甲。\n- 丢弃时会消失。\n- 死亡或溺水时会保留。",
     UM_MAXWELL_NIGHTSWORD = "- 生成临时暗影剑。\n- 丢弃时会消失。\n- 死亡或溺水时会保留。",
     BRINE_BALM = "- 会造成少量伤害，再随时间慢慢为你治疗。\n- 可恢复生命值上限。",
-    PORTABLECOOKPOT_ITEM = "- 其他幸存者现在也可以使用它。",
     BATHBOMB = "- 如果扔进主大陆的某个大型温泉，可恢复生命值上限。",
     UM_EYEBALM = "- 使用后雪暴/沙尘暴中不惧减速。",
     UM_HAT_RIME = "- 提供的保护取决于使用者的体温有多低。\n- 会随时间融化，受伤不消耗耐久。",
@@ -97,6 +96,8 @@ STRINGS.UNCOMP_TOOLTIP = {
     BEAKBASHER = "- 非常出色的锤子。",
     UM_HAT_LEAFWING = "- 佩戴时更迅捷。\n- 可轻松在密棘中穿行。",
     UM_FEATHER_TOTEM = "- 死后仍会随你保留。\n- 复活时会消耗其中的羽毛 \n 以尽量防止最大生命值的损失并触发其他特殊效果。",
+    SEEDPOUCH = "- 袋里的种子永不腐烂。\n- 可以用弹性空间制造器升级。",
+    ANTLIONHAT = "- 内部格子无限堆叠。\n- "会捡起附近掉落的地皮。
 }
 local TOOLTIPS = STRINGS.UNCOMP_TOOLTIP
 
@@ -315,15 +316,15 @@ if TUNING.DSTU and TUNING.DSTU.STORMS then
 end
 
 if TUNING.DSTU and TUNING.DSTU.GOTOBED ~= false then
-    TOOLTIPS.BEDROLL_STRAW = "- 可恢复生命值上限。"
+    TOOLTIPS.BEDROLL_STRAW = "- 如果伤的不重，可以恢复生命值上限。"
 
-    TOOLTIPS.BEDROLL_FURRY = "- 效率提高了一点。\n- 可恢复生命值上限。"
+    TOOLTIPS.BEDROLL_FURRY = "- 效率提高了一点。\n- 如果伤的不重，可恢复生命值上限。"
 
-    TOOLTIPS.TENT = "- 可恢复生命值上限。"
+    TOOLTIPS.TENT = "- 如果伤的不重，可恢复生命值上限。"
 
-    TOOLTIPS.PORTABLETENT_ITEM = "- 可恢复生命值上限。"
+    TOOLTIPS.PORTABLETENT_ITEM = "- 如果伤的不重，可恢复生命值上限。"
 
-    TOOLTIPS.SIESTAHUT = "- 效率略低。\n- 如果损失不严重，可以恢复生命值上限。"
+    TOOLTIPS.SIESTAHUT = "- 效率略低。\n- 如果伤的不重，可以恢复生命值上限。"
     
 elseif TUNING.DSTU.GOTOBED == "legacy" then
 
@@ -426,7 +427,12 @@ if TUNING.DSTU and TUNING.DSTU.WARLY_CHANGES == 1 then
     TOOLTIPS.SPICEPACK = "- 不再是背包。\n- 只能存放食材和有新鲜度的物品。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.WXLESS then
+if TUNING.DSTU.WARLY_CHANGES ~= 0 then
+	TOOLTIPS.SPICE_SALT = "- 让料理能恢复生命值上限。"
+	TOOLTIPS.PORTABLECOOKPOT_ITEM = "- 其他幸存者现在也可以使用它。"	
+end
+
+if TUNING.DSTU.WXLESS then
     local CircuitDefs = {
         HEAT = "- 现在在工作或攻击时提升体温。\n- 不再改变体温的上下限。\n- 提供隔热值。\n- 体温越高，工作效率越高。",
     MOVESPEED = "- 跑得越久，跑步速度就会越高。",
