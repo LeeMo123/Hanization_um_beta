@@ -23,6 +23,9 @@ AddPrefabPostInit("uncompromising_ratsniffer", function(inst)
     local rat_sniffer = upvaluehelper.GetEventHandle(inst, "rat_sniffer", "prefabs/uncompromising_rat")
     if rat_sniffer ~= nil then
         inst:RemoveEventCallback("rat_sniffer", rat_sniffer)
+        local Sniffertime = upvaluehelper.Get(rat_sniffer, "Sniffertime")
+        local IsProperContainer = upvaluehelper.Get(rat_sniffer, "IsProperContainer")
+        local DDScore = upvaluehelper.Get(rat_sniffer, "DDScore")
 
         inst:ListenForEvent("rat_sniffer", function (inst, dev)
             local x, y, z = inst.Transform:GetWorldPosition()

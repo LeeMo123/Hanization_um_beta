@@ -28,10 +28,10 @@ AddPrefabPostInit("world", function(inst)
     STRINGS.CHARACTER_QUOTES.wathom = "\"我捕捉到你的呼吸了。\""
     STRINGS.CHARACTER_SURVIVABILITY.wathom = "渺茫"
 
+    -- 技能树相关汉化 -- 所有的角色 包括UM人物或原版角色
     inst:DoTaskInTime(1, function ()
         modimport("init/init_strings/init_descriptions/skilltreestrings")
     end)
-    
 end)
 
 -- 跳劈哥 wathom汉化

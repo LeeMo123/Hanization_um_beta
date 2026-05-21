@@ -63,18 +63,16 @@ end)
 -- 沃尔特和沃比相关
 modimport("wixie_postinit/walter_strings")
 
--- 女武神技能树改动
-if TUNING.DSTU and TUNING.DSTU.WATHGRITHR_REWORK == 1 then
-    modimport("postinit/prefabs/skilltree_wathgrithr")
-end
+-- -- 女武神技能树改动
+-- if TUNING.DSTU and TUNING.DSTU.WATHGRITHR_REWORK == 1 then
+--     modimport("postinit/prefabs/skilltree_wathgrithr")
+-- end
 
--- 沃尔夫冈技能树改动
+-- 沃尔夫冈
 if TUNING.DSTU and TUNING.DSTU.WOLFGANG_HUNGERMIGHTY then
-    modimport("init/init_character_changes/wolfgang")
-    modimport("postinit/prefabs/skilltree_wolfgang")
     STRINGS.ACTIONS.MIGHTYJUMP  = "飞跃"
     STRINGS.ACTIONS.MIGHTYSWING = "强力打击"
+    
+    STRINGS.CHARACTERS.WOLFGANG.NEED_MORE_MIGHTINESS = "强壮的肌肉需要休息！"
+    STRINGS.CHARACTERS.WOLFGANG.NEED_MORE_SANITY = "太吓人了！"
 end
-
--- wortox技能树改动
-modimport("init/init_character_changes/skilltree_wortox") -- Import New Wortox Tree
