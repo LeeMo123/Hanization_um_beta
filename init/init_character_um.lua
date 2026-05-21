@@ -21,7 +21,7 @@ AddPrefabPostInit("world", function(inst)
     STRINGS.CHARACTER_ABOUTME.wixie = "有人说薇希粗鲁的态度是她不安全感的掩饰。这些人往往是她弹弓的目标。"
     STRINGS.CHARACTER_SURVIVABILITY.wixie = "严峻"
     --跳劈哥沃托姆
-    STRINGS.ACTIONS.WATHOMBARK = "嚎啸"
+    STRINGS.ACTIONS.WATHOMBARK = "嚎叫"
     STRINGS.CHARACTER_TITLES.wathom = "被遗忘的仿造实验品"
     STRINGS.CHARACTER_NAMES.wathom = "沃托姆"
     STRINGS.CHARACTER_DESCRIPTIONS.wathom = "*顶级掠食者\n*肾上腺素升高时进入狂暴状态\n*引起动物恐慌\n*跑得越快，伤得越重"
@@ -29,7 +29,7 @@ AddPrefabPostInit("world", function(inst)
     STRINGS.CHARACTER_SURVIVABILITY.wathom = "渺茫"
 
     inst:DoTaskInTime(1, function ()
-        modimport("init/init_descriptions/skilltreestrings")
+        modimport("init/init_strings/init_descriptions/skilltreestrings")
     end)
     
 end)
@@ -37,14 +37,14 @@ end)
 -- 跳劈哥 wathom汉化
 AddPrefabPostInit("wathom", function(inst)
     inst:DoTaskInTime(0, function ()
-        modimport("init/init_descriptions/wathom")
+        modimport("init/init_strings/init_descriptions/wathom")
     end)
 end)
 
 -- 老鼠人 winky汉化
 AddPrefabPostInit("winky", function(inst)
     inst:DoTaskInTime(0, function()
-        modimport("init/init_descriptions/winky")
+        modimport("init/init_strings/init_descriptions/winky")
     end)
 end)
 

@@ -507,7 +507,7 @@ DESCRIBE.SLUDGE_SACK = "我希望它不会粘在我的背上。"
 DESCRIBE.CANNONBALL_SLUDGE_ITEM =
 "它还是把事情搞砸了。"
 DESCRIBE.BOAT_BUMPER_SLUDGE = "它会反弹任何击中它的东西。"
-DESCRIBE.BOAT_BUMBER_SLUDGE_KIT =
+DESCRIBE.BOAT_BUMPER_SLUDGE_KIT =
 "一个更柔软的垫子，可以用来对付撞到我船的东西。"
 DESCRIBE.BOATPATCH_SLUDGE = "另一种堵住漏洞的方法。"
 DESCRIBE.UM_COPPER_PIPE = "金属管，难道来自一棵树？"
@@ -699,7 +699,7 @@ DESCRIBE.UM_RICE_PUDDING = "一些普通的米饭布丁。"
 
 DESCRIBE.UM_BOATBOTTLE = {
     FULL = "要么瓶子太小，要么船太大，因为我觉得船装不进去。",
-    EMPTY = "如果我重新排列船上每个粒子，它还是同一条船吗？"
+    EMPTY = "如果我重新排列船上每个粒子，它还是同一条船吗?"
 }
 
 ANNOUNCE.ANNOUNCE_BUTTERFLY_SLIP = { "太滑了打不到。",
@@ -708,7 +708,16 @@ ANNOUNCE.ANNOUNCE_BUTTERFLY_SLIP = { "太滑了打不到。",
     "它休息时会更容易击中。",
     "如果它降落了可能更容易击中。" }
 
-DESCRIBE.WATHOM_CORPSE = "我觉得他还在呼吸！"
+DESCRIBE.WATHGRITHR_SHIELD_DREADSTONE = "站在它身后，我无所畏惧！"
 
-DESCRIBE.WATHGRITHR_SHIELD_DREADSTONE = "站在它后面我无所畏惧！"
-ANNOUNCE.ANNOUNCE_WEAPON_TOOWEAK_ICESHIELD = "我应该用一些热门话题来打破这层冰！"
+ANNOUNCE.ANNOUNCE_WEAPON_TOOWEAK_ICESHIELD = "我该用些热点话题来打破这层冰！"
+DESCRIBE.UM_THULECITE_RAZOR = "铥矿剃刀！经典之作！"
+DESCRIBE.UM_DURIAN_CREAM_MARSHCAKE = "这气味……具有统计学显著性。"
+ANNOUNCE.ANNOUNCE_MARSHCAKE_BONUS = {
+    SPRING = "新奇感肯定已被雨水冲刷殆尽。",
+    SUMMER = "味道不错，但我本可以留到以后吃。",
+    AUTUMN = "在这个季节品尝到的精致风味。",
+    WINTER = "严冬中的一股热带异常气息！",
+}
+DESCRIBE.UM_BOOMBERRYPIE = "我对这个派喜爱至极。"
+DESCRIBE.UM_CHILES_EN_NOGADA = "光是看着就让我垂涎欲滴！"

@@ -21,6 +21,7 @@ STRINGS = GLOBAL.STRINGS
 					"她看起来饿坏了！",
 					"我得给她找点吃的！",
 				},
+    "乖女孩，沃比！", --need these for scrapbook or else it crahses.
 	}
 	
 	DESCRIBE.WOBYBIG = {
@@ -40,6 +41,7 @@ STRINGS = GLOBAL.STRINGS
 					"要是我不喂她，她就要变小了！",
 					"怎么了，孩子？你饿了吗？",
 				},
+    "乖女孩，沃比！", --need these for scrapbook or else it crahses.
 	}
 	
 	DESCRIBE.MEATRACK_HAT = {

@@ -60,62 +60,62 @@ AddPrefabPostInit("webbedcreature", function(inst)
     end)
 end)
 
--- 宝石装备
-local modifiers = {
-    -- Greens
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYGREENGEM1,
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYGREENGEM2,
+-- -- 宝石装备
+-- local modifiers = {
+--     -- Greens
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYGREENGEM1,
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYGREENGEM2,
 
-    -- Yellows
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYYELLOWGEM1,
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYYELLOWGEM2,
+--     -- Yellows
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYYELLOWGEM1,
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYYELLOWGEM2,
 
-    -- Clears
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYPALEGEM1,
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYPALEGEM2,
+--     -- Clears
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYPALEGEM1,
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYPALEGEM2,
 
-    -- Reds
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYREDGEM1,
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYREDGEM2,
+--     -- Reds
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYREDGEM1,
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYREDGEM2,
 
-    -- Purples
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYPURPLEGEM1,
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYPURPLEGEM2, 
+--     -- Purples
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYPURPLEGEM1,
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYPURPLEGEM2, 
 
-    -- Oranges
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYORANGEGEM1,
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYORANGEGEM2,
+--     -- Oranges
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYORANGEGEM1,
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYORANGEGEM2,
 
-    -- Blues
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYBLUEGEM1,
-    STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYBLUEGEM2,
-}
-local _GetAdjectivedName = EntityScript.GetAdjectivedName
-function EntityScript:GetAdjectivedName(...)
-    local name = self:GetBasicDisplayName()
-    local equippable = self.replica.equippable
-    local minerologyable = self.replica.minerologyable
-    if equippable ~= nil then
-        local eslot = equippable:EquipSlot()
-        if eslot == EQUIPSLOTS.HANDS and minerologyable and minerologyable._enchantnum and minerologyable._enchantnum:value() and minerologyable._enchantnum:value() ~= 0 then
-            if not self.no_wet_prefix and (self.always_wet_prefix or self:GetIsWet()) then
-                print("minerologyable._enchantnum:value():", minerologyable._enchantnum:value())
-                return ConstructAdjectivedName(self, name, STRINGS.WET_PREFIX.TOOL.." "..modifiers[minerologyable._enchantnum:value()])
-            else
-                print("minerologyable._enchantnum:value():", minerologyable._enchantnum:value())
-                return ConstructAdjectivedName(self, name, modifiers[minerologyable._enchantnum:value()])
-            end
-        end
-    end
+--     -- Blues
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYBLUEGEM1,
+--     STRINGS.NAMES.GEMTOOL_PREFIX.UM_GEMOLOGYBLUEGEM2,
+-- }
+-- local _GetAdjectivedName = EntityScript.GetAdjectivedName
+-- function EntityScript:GetAdjectivedName(...)
+--     local name = self:GetBasicDisplayName()
+--     local equippable = self.replica.equippable
+--     local minerologyable = self.replica.minerologyable
+--     if equippable ~= nil then
+--         local eslot = equippable:EquipSlot()
+--         if eslot == EQUIPSLOTS.HANDS and minerologyable and minerologyable._enchantnum and minerologyable._enchantnum:value() and minerologyable._enchantnum:value() ~= 0 then
+--             if not self.no_wet_prefix and (self.always_wet_prefix or self:GetIsWet()) then
+--                 print("minerologyable._enchantnum:value():", minerologyable._enchantnum:value())
+--                 return ConstructAdjectivedName(self, name, STRINGS.WET_PREFIX.TOOL.." "..modifiers[minerologyable._enchantnum:value()])
+--             else
+--                 print("minerologyable._enchantnum:value():", minerologyable._enchantnum:value())
+--                 return ConstructAdjectivedName(self, name, modifiers[minerologyable._enchantnum:value()])
+--             end
+--         end
+--     end
 
-    return _GetAdjectivedName(self, ...)
-end
+--     return _GetAdjectivedName(self, ...)
+-- end
 
 -- 通用引爆器 引爆动作
 AddPrefabPostInit("um_detonator", function(inst)
     local onselect = inst.components.spellbook and inst.components.spellbook.items and inst.components.spellbook.items[1] and inst.components.spellbook.items[1].onselect
     inst.components.spellbook.items[1].onselect = function(inst)
-        print("触发引爆器")
+        -- print("触发引爆器")
         onselect(inst)
         inst.components.spellbook:SetSpellName("引爆")
     end
@@ -124,6 +124,8 @@ end)
 -- 动作/容器等类的汉化
 STRINGS.ACTIONS.SCAN_GEMOLOGY_GEM = "检查"
 STRINGS.ACTIONS.UM_GUNSHOOTY = "发射"
+STRINGS.ACTIONS.UM_FORGE_GEM = "锻造！"
 
 local containers = require("containers")
 containers.params.um_cookpot_wagstaff.widget.buttoninfo.text = "烹饪"
+containers.params.um_gemologyforge.widget.buttoninfo.text = STRINGS.ACTIONS.UM_FORGE_GEM

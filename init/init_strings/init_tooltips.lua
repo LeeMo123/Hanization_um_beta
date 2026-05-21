@@ -45,7 +45,17 @@ STRINGS.UNCOMP_TOOLTIP = {
     TRIDENT = "- 更强大的法术。\n- 更高的耐久和伤害。\n- 可以造成多段打击。",
     COMPASS = "- 在物品栏里也能起效。\n- 提高耐久。",
     SCRAP_MONOCLEHAT = "- 增加地图揭示范围。",
-    BREAK = "在此断开",
+    TILLWEEDSALVE = "- 恢复损失的生命值上限。",
+    SEEDPOUCH = "- 阻止内部种子腐烂。\n- 可使用弹性间隔器升级。",
+    ANTLIONHAT = "- 内部堆叠数量无限。\n- 拾取附近地面的地皮。",
+    KELPHAT = "- 佩戴者的潮湿度会缓慢上升至 33%。",
+    BOAT_BUMPER_KELP_KIT = "- 随时间腐烂。\n- 在水中时恢复生命值。",
+    BATHBOMB = "- 若投入大陆特定的大型温泉中，可恢复损失的生命值上限。",
+    ONEMANBAND = "- 使猪人和兔人离开房屋。\n- 降低理智消耗。",
+    FIRESTAFFF = "- 制造可控火焰。",
+    LIGHTER = "- 可通过余烬充能。\n- 耐久为 0% 时不会损坏。",
+    VOIDCLOTH_UMBRELLA = "- 不再被酸雨修复。",
+    __BREAK = "BREAK HERE",
     --uncomp content
     RAT_WHIP = "- 吃饱后威力更强。",
     AIR_CONDITIONER = "- 粉碎蘑菇以散发出有增益效果的气体云。\n- 小范围降温。\n- 大范围净化浓烟。",
@@ -65,11 +75,12 @@ STRINGS.UNCOMP_TOOLTIP = {
     SKULLCHEST_CHILD = "- 与其他骷髅箱共享其内容物品。",
     SNOWGOGGLES = "- 佩戴时可抵御暴风雪和沙尘暴。",
     GASMASK = "- 抵御孢子云。",
-    PLAGUEMASK = "- 抵御孢子云。",
+    UM_HAT_NETTLEMASK = "- 佩戴时会刺痛玩家。\n- 提供对孢子云的防护。",
+    PLAGUEMASK = "- 提供对孢子云的防护。",
     FLORAL_BANDAGE = "- 随时间恢复额外的生命值。",
-    UM_RIMEWEED_ICEPACK = "- 降低佩戴者的体温。",
-    DISEASECUREBOMB = "- 为植物施肥并加速成熟以便收获。",
-    SLUDGE_OIL = "- 可作为火坑和灯具的多用途燃料。",
+    UM_RIMEWEED_ICEPACK = "- 降低玩家体温。",
+    DISEASECUREBOMB = "- 为植物施肥并使其准备好收获。",
+    SLUDGE_OIL = "- 适用于篝火和灯笼的多用途燃料。",
     ARMOR_SHARKSUIT_UM =
     "- 防水值高。\n- 绝缘材料。\n- 佩戴者不会受到任何关于落水的负面效果。",
     HAT_CRAB = "- 佩戴时修理和缝纫的效果翻倍。",
@@ -86,18 +97,18 @@ STRINGS.UNCOMP_TOOLTIP = {
     UM_MAXWELL_ARMOR_SANITY = "- 生成临时暗影甲。\n- 丢弃时会消失。\n- 死亡或溺水时会保留。",
     UM_MAXWELL_NIGHTSWORD = "- 生成临时暗影剑。\n- 丢弃时会消失。\n- 死亡或溺水时会保留。",
     BRINE_BALM = "- 会造成少量伤害，再随时间慢慢为你治疗。\n- 可恢复生命值上限。",
-    BATHBOMB = "- 如果扔进主大陆的某个大型温泉，可恢复生命值上限。",
-    UM_EYEBALM = "- 使用后雪暴/沙尘暴中不惧减速。",
-    UM_HAT_RIME = "- 提供的保护取决于使用者的体温有多低。\n- 会随时间融化，受伤不消耗耐久。",
-    RUINS_BAT = "- 每攻击 4 次召唤一次暗影触手。\n- 对月亮系生物造成更多伤害且消耗更少耐久。",
-    UM_ICE_SICLE = "- 收割植物并冻结敌人。\n- 收割时降低体温，攻击时降得更多。\n- 衣物可以帮助抵抗寒冷。",
-    JAWED_SCYTHE = "- 用于收割植物。",
-    HOUNDIOUS_OBSERVIOUS = "- 预警即将到来的巨兽或狗群。",
-    BEAKBASHER = "- 非常出色的锤子。",
-    UM_HAT_LEAFWING = "- 佩戴时更迅捷。\n- 可轻松在密棘中穿行。",
-    UM_FEATHER_TOTEM = "- 死后仍会随你保留。\n- 复活时会消耗其中的羽毛 \n 以尽量防止最大生命值的损失并触发其他特殊效果。",
-    SEEDPOUCH = "- 袋里的种子永不腐烂。\n- 可以用弹性空间制造器升级。",
-    ANTLIONHAT = "- 内部格子无限堆叠。\n- "会捡起附近掉落的地皮。
+    UM_EYEBALM = "- 使用时提供对暴风雪/沙尘暴的防护。",
+    UM_HAT_RIME = "- 防护效果取决于用户的体温有多低。\n- 随时间融化，而非受击破碎。",
+    RUINS_BAT = "- 每攻击4次召唤暗影触手。\n- 消耗更少的耐久度，并对月相生物造成更多伤害。",
+    UM_ICE_SICLE = "- 收割植物并冻结敌人。\n- 收割时降低体温，攻击时降低更多。\n- 衣物有助于抵御寒冷。",
+    JAWED_SCYTHE = "- 收割植物。",
+    HOUNDIOUS_OBSERVIOUS = "- 预警即将到来的巨鹿或猎犬袭击。",
+    BEAKBASHER = "- 一把非常好用的锤子。",
+    UM_HAT_LEAFWING = "- 佩戴时移动速度加快。\n- 可以轻松穿过灌木丛。",
+    UM_FEATHER_TOTEM = "- 死后依然伴随你。\n- 复活时消耗内部的羽毛，以最大程度防止生命值损失并触发其他特殊效果。",
+    UM_MAGNIFIER = "- 揭示奇异宝石的品质。\n- 发现新的奇异宝石将永久揭示其名称，并将效果收录到剪贴簿中。",
+    UM_MAGNIFIER_PURPLEGEM = "- 揭示奇异宝石的品质。\n- 发现新的奇异宝石将永久揭示其名称，并将效果收录到剪贴簿中。",
+    UM_MAGNIFIER_OBSIDIAN = "- 揭示奇异宝石的品质。\n- 发现新的奇异宝石将永久揭示其名称，并将效果收录到剪贴簿中。",
 }
 local TOOLTIPS = STRINGS.UNCOMP_TOOLTIP
 
@@ -196,7 +207,6 @@ STRINGS.WIXIE_TOOLTIP = {
     SLINGSHOTAMMO_CONTAINER = "- 有6个弹药槽。",
 }
 
-
 STRINGS.ENGINEERING_TOOLTIP = {
     MINERHAT = " - 可升级。\n- 可超载充电。",
     LANTERN = "- 可升级。\n- 可超载充电。",
@@ -263,8 +273,9 @@ if TUNING.DSTU and TUNING.DSTU.SNOWSTORMS then
     TOOLTIPS.WALL_HAY_ITEM = "- 放置以抵御暴风雪。"
     TOOLTIPS.WALL_WOOD_ITEM = "- 放置以抵御暴风雪。"
     TOOLTIPS.WALL_STONE_ITEM = "- 放置以抵御暴风雪。"
-    TOOLTIPS.WALL_RUINS_ITEM = "- 放置以抵御暴风雪。"
-    TOOLTIPS.WALL_MOONROCK_ITEM = "- 放置以抵御暴风雪。"
+    TOOLTIPS.WALL_SCRAP_ITEM = "- 放置以抵御暴风雪"
+    TOOLTIPS.WALL_RUINS_ITEM = "- 放置以抵御暴风雪"
+    TOOLTIPS.WALL_MOONROCK_ITEM = "- 放置以抵御暴风雪"
     TOOLTIPS.WALL_DREADSTONE_ITEM = TOOLTIPS.WALL_DREADSTONE_ITEM .. "\n- 放置以抵御暴风雪。"
     TOOLTIPS.TURF_DRAGONFLY = TOOLTIPS.TURF_DRAGONFLY .. "\n- 放置以抵御暴风雪。"
     TOOLTIPS.YELLOWSTAFF = "- 矮星可以抵御暴风雪。"
@@ -285,6 +296,7 @@ if TUNING.DSTU and TUNING.DSTU.HAYFEVER then
 end
 
 if TUNING.DSTU and TUNING.DSTU.SMOG then
+    TOOLTIPS.UM_HAT_NETTLEMASK = TOOLTIPS.UM_HAT_NETTLEMASK .. "\n- 穿着时可抵御浓烟。"
     TOOLTIPS.GASMASK = TOOLTIPS.GASMASK .. "\n- 穿着时可抵御浓烟。"
     TOOLTIPS.PLAGUEMASK = TOOLTIPS.PLAGUEMASK .. "\n- 穿着时可抵御浓烟。"
 	TOOLTIPS.SMOGEATER = "- 吸收浓烟。"
@@ -423,6 +435,10 @@ if TUNING.DSTU and TUNING.DSTU.STORMS then
     TOOLTIPS.STAFF_TORNADO = "- 可以短暂地改变巨型龙卷风的方向。"
 end
 
+if TUNING.DSTU.SHAVE_MODE then
+    TOOLTIPS.UM_THULECITE_RAZOR = "- Can occasionally give an extra resouce."
+end
+
 if TUNING.DSTU and TUNING.DSTU.WARLY_CHANGES == 1 then
     TOOLTIPS.SPICEPACK = "- 不再是背包。\n- 只能存放食材和有新鲜度的物品。"
 end
@@ -447,12 +463,13 @@ if TUNING.DSTU.WXLESS then
     TASER = "- 被攻击将麻痹攻击者。\n- 当你攻击足够多次后会恢复你的电荷。",
     COLD = "- 定期生产冰。\n- 不再改变体温的上下限。\n- 降低食物腐败速度。\n- 降低清空潮湿度转化为冰的潮湿度上限\n- 如果静止不动，快速冻结自己。",
     MAXHUNGER = "- 放缓电荷流失速度\n- 降低食物的负面效果，满载时扭转负面效果。", --WHOEVER AT KLEI WHO DECIDED THEY'D MAKE THE MAXHUNGER1 THE WEAK VERSION AND MAXHUNGER THE STRONG VERSION SHOULD HAVE THEIR FINGERS BOILED.
-    MAXHUNGER1 = "- 略微减缓饥饿流失速度。",
+    MAXHUNGER1 = "- 略微减缓饥饿流失速度。现在提升饱食度为30",
     }
     for k, v in pairs(CircuitDefs) do
         TOOLTIPS["WX78MODULE_" .. k] = v
     end
 end
--- if GetModConfigData("toolbox_tools") then
+
+if GetModConfigData("toolbox_tools") then
     TOOLTIPS.WINONA_TOOLBOX = "- 便携式存储装置，用于存放可拆卸设备、工具和所有工程相关的玩意儿。"
--- end
+end
