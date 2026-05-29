@@ -208,13 +208,14 @@ STRINGS.WIXIE_TOOLTIP = {
 }
 
 STRINGS.ENGINEERING_TOOLTIP = {
-    MINERHAT = " - 可升级。\n- 可超载充电。",
-    LANTERN = "- 可升级。\n- 可超载充电。",
-    NIGHTSTICK = "- 可超载充电。",
-    BUGZAPPER = "- 可超载充电。",
+    MINERHAT = " - 可升级。",
+    LANTERN = "- 可升级。",
+    MOLEHAT = "- 可升级。",
     WINONA_TOOLBOX = "", --putting these here for the icon
     WINONA_UPGRADEKIT_ELECTRICAL = ""
 }
+
+
 
 
 if TUNING.DSTU and TUNING.DSTU.TELESTAFF_REWORK then

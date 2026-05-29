@@ -440,7 +440,10 @@ end
 chzation("wathom", WATHOM)
 chzation("wixie", WIXIE)
 
-chzation("wormwood", WORMWOOD)
+-- 植物人
+if TUNING.DSTU and TUNING.DSTU.WORMWOOD_PHOTOSYNTHESIS then
+    chzation("wormwood", WORMWOOD)
+end
 
 -- 小恶魔
 if TUNING.DSTU and TUNING.DSTU.WORTOXCHANGES then

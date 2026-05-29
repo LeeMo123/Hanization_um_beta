@@ -125,6 +125,8 @@ end)
 STRINGS.ACTIONS.SCAN_GEMOLOGY_GEM = "检查"
 STRINGS.ACTIONS.UM_GUNSHOOTY = "发射"
 STRINGS.ACTIONS.UM_FORGE_GEM = "锻造！"
+STRINGS.ACTIONS.STORE_BOAT = "收起船只"
+
 
 local containers = require("containers")
 containers.params.um_cookpot_wagstaff.widget.buttoninfo.text = "烹饪"
