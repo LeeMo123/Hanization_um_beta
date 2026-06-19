@@ -93,8 +93,9 @@ AddPrefabPostInit("uncompromising_ratsniffer", function(inst)
                 -- TheNet:SystemMessage("老鼠分 = " .. inst.ratscore)
                 TheNet:SystemMessage("食物分 = " .. inst.foodscore)
                 TheNet:SystemMessage("鼠巢分 = " .. inst.burrowbonus)
+                TheNet:SystemMessage("老鼠分 = "..  inst.ratscore)
             end
-            if inst.ratscore > 240 then inst.ratscore = 240 end
+            if inst.ratscore > 300 then inst.ratscore = 300 end
             if TUNING.DSTU and TUNING.DSTU.ANNOUNCE_BASESTATUS then
                 -- TheNet:SystemMessage("真实老鼠分 = " .. inst.ratscore)
                 TheNet:SystemMessage("鼠潮倒计时 = " .. (TheWorld.components.ratcheck:GetRatTimer() ~= nil and TheWorld.components.ratcheck:GetRatTimer() or "... not available? timer is 0 second") .. "s")
