@@ -30,9 +30,9 @@ AddPrefabPostInit("uncompromising_ratsniffer", function(inst)
         inst:ListenForEvent("rat_sniffer", function (inst, dev)
             local x, y, z = inst.Transform:GetWorldPosition()
     
-            local players = TheSim:FindEntities(x, y, z, TUNING.DSTU.SNIFFER_PLAYER, {"player"}, {"playerghost"})
+            local players = TheSim:FindEntities(x, y, z, TUNING.DSTU.SNIFFER_PLAYER_RANGE, {"player"}, {"playerghost"})
             for a, b in ipairs(players) do
-                if b:IsValid() and b:IsNear(inst, TUNING.DSTU.SNIFFER_PLAYER) then
+                if b:IsValid() and b:IsNear(inst, TUNING.DSTU.SNIFFER_PLAYER_RANGE) then
                     Sniffertime(b, inst)
                 end
             end
