@@ -37,7 +37,7 @@ AddPrefabPostInit("uncompromising_ratsniffer", function(inst)
                 end
             end
         
-            local ents = TheSim:FindEntities(x, 0, z, TUNING.DSTU.SNIFFER_ITEM, {"_inventoryitem"}, NOTAGS)
+            local ents = TheSim:FindEntities(x, 0, z, TUNING.DSTU.SNIFFER_ITEM_RANGE, {"_inventoryitem"}, NOTAGS)
             --[[print("THE RAT SNIFFS")
             print("                o")
             print("    =========B  *sniff* *sniff*")
@@ -70,7 +70,7 @@ AddPrefabPostInit("uncompromising_ratsniffer", function(inst)
             end
         
             local DiferentDD = {}
-            for i, v in ipairs(TheSim:FindEntities(x, 0, z, TUNING.DSTU.SNIFFER_ITEM, nil, {"FX", "NOCLICK"})) do
+            for i, v in ipairs(TheSim:FindEntities(x, 0, z, TUNING.DSTU.SNIFFER_ITEM_RANGE, nil, {"FX", "NOCLICK"})) do
                 if (inst.ratscore + inst.foodscore + inst.burrowbonus) < 300 then
                     local container = v:IsValid() and IsProperContainer(v) and (v.components.container_proxy and v or v.container and v.container.components.container_proxy and v.container)
                     if container then
