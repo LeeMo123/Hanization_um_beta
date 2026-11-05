@@ -600,7 +600,6 @@ return {
     ANNOUNCE_OCEAN_SILHOUETTE_INCOMING              = "...那是什么？",
 
     -- wx specific
-    ANNOUNCE_WX_SCANNER_NEW_FOUND                   = "only_used_by_wx78",
     --fallback to speech_wilson.lua     ANNOUNCE_WX_SCANNER_FOUND_NO_DATA = "only_used_by_wx78",
     --willow specific
     --fallback to speech_wilson.lua 	ANNOUNCE_LIGHTFIRE =

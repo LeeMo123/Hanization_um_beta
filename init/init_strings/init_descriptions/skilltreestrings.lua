@@ -440,22 +440,23 @@ end
 chzation("wathom", WATHOM)
 chzation("wixie", WIXIE)
 
+local UM_CONFIG = GLOBAL.UM_CONFIG
 -- 植物人
-if TUNING.DSTU and TUNING.DSTU.WORMWOOD_PHOTOSYNTHESIS then
+if UM_CONFIG and UM_CONFIG.WORMWOOD_PHOTOSYNTHESIS then
     chzation("wormwood", WORMWOOD)
 end
 
 -- 小恶魔
-if TUNING.DSTU and TUNING.DSTU.WORTOXCHANGES then
+if UM_CONFIG and UM_CONFIG.WORTOXCHANGES then
     chzation("wortox", WORTOX)
 end
 
 -- 沃尔夫冈
-if TUNING.DSTU and TUNING.DSTU.WOLFGANG_HUNGERMIGHTY then
+if UM_CONFIG and UM_CONFIG.WOLFGANG_HUNGERMIGHTY then
     chzation("wolfgang", WOLFGANG)
 end
 
 -- 薇格弗德
-if TUNING.DSTU and TUNING.DSTU.WATHGRITHR_REWORK then
+if UM_CONFIG and UM_CONFIG.WATHGRITHR_REWORK then
     chzation("wathgrithr", WATHGRITHR)
 end

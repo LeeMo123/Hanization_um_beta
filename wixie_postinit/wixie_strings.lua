@@ -1,4 +1,5 @@
 local require = GLOBAL.require
+local UM_CONFIG = GLOBAL.UM_CONFIG
 
 STRINGS = GLOBAL.STRINGS
 STRINGS.CHARACTERS.WIXIE = require "wixie_speech"
@@ -19,7 +20,7 @@ STRINGS.SKIN_QUOTES.wixie_none = "\"不是我干的！\""
 STRINGS.SKIN_DESCRIPTIONS.wixie_none =
 "一个总惹麻烦的问题青年。"
 
-if TUNING.DSTU and TUNING.DSTU.WIXIE then
+if UM_CONFIG and UM_CONFIG.WIXIE then
     STRINGS.CHARACTER_DESCRIPTIONS.walter =
     "*什么都不怕，除了受伤\n󰀕是生存大师\n󰀕是训狗专家\n*对蜜蜂过敏\n*对时尚不感兴趣"
 end

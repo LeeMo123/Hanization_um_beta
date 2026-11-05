@@ -1,4 +1,5 @@
 local upvaluehelper = require "hooks/upvaluehelper"
+local UM_CONFIG = GLOBAL.UM_CONFIG
 
 local NOTAGS = {"engineeringbatterypowered", "smallcreature", "_container", "spore", "NORATCHECK", "_combat", "_health", "balloon", "heavy", "projectile", "frozen", "deployedfarmplant", "outofreach"}
 
@@ -30,14 +31,14 @@ AddPrefabPostInit("uncompromising_ratsniffer", function(inst)
         inst:ListenForEvent("rat_sniffer", function (inst, dev)
             local x, y, z = inst.Transform:GetWorldPosition()
     
-            local players = TheSim:FindEntities(x, y, z, TUNING.DSTU.SNIFFER_PLAYER_RANGE, {"player"}, {"playerghost"})
+            local players = TheSim:FindEntities(x, y, z, UM_CONFIG.SNIFFER_PLAYER_RANGE, {"player"}, {"playerghost"})
             for a, b in ipairs(players) do
-                if b:IsValid() and b:IsNear(inst, TUNING.DSTU.SNIFFER_PLAYER_RANGE) then
+                if b:IsValid() and b:IsNear(inst, UM_CONFIG.SNIFFER_PLAYER_RANGE) then
                     Sniffertime(b, inst)
                 end
             end
         
-            local ents = TheSim:FindEntities(x, 0, z, TUNING.DSTU.SNIFFER_ITEM_RANGE, {"_inventoryitem"}, NOTAGS)
+            local ents = TheSim:FindEntities(x, 0, z, UM_CONFIG.SNIFFER_ITEM_RANGE, {"_inventoryitem"}, NOTAGS)
             --[[print("THE RAT SNIFFS")
             print("                o")
             print("    =========B  *sniff* *sniff*")
@@ -60,7 +61,7 @@ AddPrefabPostInit("uncompromising_ratsniffer", function(inst)
                                 SnifferFoodScoreCalculations(inst, true, v)
                             else
                                 SnifferFoodScoreCalculations(inst, false, v)
-                                --if TUNING.DSTU.ITEMCHECK and v:HasAnyTag("_equippable", "tool", "gem") then
+                                --if UM_CONFIG.ITEMCHECK and v:HasAnyTag("_equippable", "tool", "gem") then
                                     --inst.itemscore = inst.itemscore + 30 -- Oooh, wants wants! We steal!
                                 --end
                             end
@@ -70,7 +71,7 @@ AddPrefabPostInit("uncompromising_ratsniffer", function(inst)
             end
         
             local DiferentDD = {}
-            for i, v in ipairs(TheSim:FindEntities(x, 0, z, TUNING.DSTU.SNIFFER_ITEM_RANGE, nil, {"FX", "NOCLICK"})) do
+            for i, v in ipairs(TheSim:FindEntities(x, 0, z, UM_CONFIG.SNIFFER_ITEM_RANGE, nil, {"FX", "NOCLICK"})) do
                 if (inst.ratscore + inst.foodscore + inst.burrowbonus) < 300 then
                     local container = v:IsValid() and IsProperContainer(v) and (v.components.container_proxy and v or v.container and v.container.components.container_proxy and v.container)
                     if container then
@@ -87,7 +88,7 @@ AddPrefabPostInit("uncompromising_ratsniffer", function(inst)
             -- print("Ratscore = "..inst.ratscore)
             -- print("------------------------")
             -- just use the command if you wanna see i guess.
-            if TUNING.DSTU and TUNING.DSTU.ANNOUNCE_BASESTATUS then
+            if UM_CONFIG and UM_CONFIG.ANNOUNCE_BASESTATUS then
                 TheNet:SystemMessage("-------------------------")
                 -- TheNet:SystemMessage("物品分 = " .. inst.itemscore)
                 -- TheNet:SystemMessage("老鼠分 = " .. inst.ratscore)
@@ -96,7 +97,7 @@ AddPrefabPostInit("uncompromising_ratsniffer", function(inst)
                 TheNet:SystemMessage("老鼠分 = "..  inst.ratscore)
             end
             if inst.ratscore > 300 then inst.ratscore = 300 end
-            if TUNING.DSTU and TUNING.DSTU.ANNOUNCE_BASESTATUS then
+            if UM_CONFIG and UM_CONFIG.ANNOUNCE_BASESTATUS then
                 -- TheNet:SystemMessage("真实老鼠分 = " .. inst.ratscore)
                 TheNet:SystemMessage("鼠潮倒计时 = " .. (TheWorld.components.ratcheck:GetRatTimer() ~= nil and TheWorld.components.ratcheck:GetRatTimer() or "... not available? timer is 0 second") .. "s")
                 TheNet:SystemMessage("-------------------------")

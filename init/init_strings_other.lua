@@ -45,6 +45,7 @@ local webbedcreatures_names = {
     ["Scaly Cocoon"] = "带鳞虫茧",
     ["Leafy Cocoon"]= "带叶虫茧",
     ["Shrouded Cocoon"] = "幽影虫茧",
+    ["Soggy Cocoon"] = "湿软虫茧",
 }
 AddPrefabPostInit("webbedcreature", function(inst)
     inst:DoTaskInTime(1,function()

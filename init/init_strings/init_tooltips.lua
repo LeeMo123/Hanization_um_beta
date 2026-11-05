@@ -1,5 +1,6 @@
 --moved into seperate file, was getting a bit too big.
 local STRINGS = GLOBAL.STRINGS
+local UM_CONFIG = GLOBAL.UM_CONFIG
 
 STRINGS.UNCOMP_TOOLTIP = {
     AMULET =
@@ -215,27 +216,28 @@ STRINGS.ENGINEERING_TOOLTIP = {
     WINONA_UPGRADEKIT_ELECTRICAL = ""
 }
 
+if UM_CONFIG and UM_CONFIG.BATH_HEAL then
+    TOOLTIPS.BATHBOMB = "- 恢复损失的最大生命值, if tossed in a certain larger spring in mainland."
+end
 
-
-
-if TUNING.DSTU and TUNING.DSTU.TELESTAFF_REWORK then
+if UM_CONFIG and UM_CONFIG.TELESTAFF_REWORK then
     TOOLTIPS.TELESTAFF = "- 可选择目的地。\n- 增加使用次数。"
     TOOLTIPS.TELEBASE = "- 每次传送不再消耗宝石。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.BEEBOX_NERF then
+if UM_CONFIG and UM_CONFIG.BEEBOX_NERF then
     TOOLTIPS.BEEBOX = "- 降低外出蜜蜂的数量上限。"
     TOOLTIPS.BEEHAT = "- 将降低采集蜂箱时受到的伤害。"	
 end
-if TUNING.DSTU and TUNING.DSTU.GLASSCUTTER_REVERT then
+if UM_CONFIG and UM_CONFIG.GLASSCUTTER_REVERT then
     TOOLTIPS.GLASSCUTTER = "- 减少耐久消耗。\n对暗影生物造成更多伤害。"
 end
-if TUNING.DSTU and TUNING.DSTU.FUNCAP_REWORK then
+if UM_CONFIG and UM_CONFIG.FUNCAP_REWORK then
     TOOLTIPS.RED_MUSHROOMHAT = "- 让你渴求红蘑菇。\n- 每吃一口都会增加你的伤害。\n- 紧紧抓住。" 
     TOOLTIPS.GREEN_MUSHROOMHAT = "- 让你渴求绿蘑菇。\n- 每吃一口都会使你变得更快。\n- 紧紧抓住。"
     TOOLTIPS.BLUE_MUSHROOMHAT = "- 让你渴求蓝蘑菇。\n- 每吃一口都会让你工作更卖力。\n- 紧紧抓住。"
 end
-if not (TUNING.DSTU and TUNING.DSTU.ELECTRICALMISHAP) then
+if not (UM_CONFIG and UM_CONFIG.ELECTRICALMISHAP) then
     TOOLTIPS.NIGHTSTICK =
     "- 耐久耗尽后不再损坏。\n- 可以由各种电气设备、发电机和土豆充电。"
     TOOLTIPS.BUGZAPPER =
@@ -247,27 +249,27 @@ else
     "- 对昆虫造成额外伤害和范围伤害。\n- 造成电击伤害。\n - 可以在发电机上充电。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.SEWING_KIT then
+if UM_CONFIG and UM_CONFIG.SEWING_KIT then
     TOOLTIPS.SEWING_KIT = "- 缝补次数翻倍，但每次缝补恢复的耐久更少。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.FLINGO_SETTING == "Fuelmuncher" then
+if UM_CONFIG and UM_CONFIG.FLINGO_SETTING == "Fuelmuncher" then
     TOOLTIPS.FIRESUPPRESSOR = "- 每次抛出雪球都会消耗燃料。\n- 增加燃料上限。"
-elseif TUNING.DSTU and TUNING.DSTU.FLINGO_SETTING == "Waterballs" then
+elseif UM_CONFIG and UM_CONFIG.FLINGO_SETTING == "Waterballs" then
     TOOLTIPS.FIRESUPPRESSOR = "- 抛出的雪球不再冻结生物。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.LONGPIG then
+if UM_CONFIG and UM_CONFIG.LONGPIG then
     TOOLTIPS.REVIVER = "- 需要死去幸存者的血肉。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.EYEBRELLAREWORK == false then
+if UM_CONFIG and UM_CONFIG.EYEBRELLAREWORK == false then
     TOOLTIPS.EYEBRELLAHAT = "- 降低隔热值。"
 else
     TOOLTIPS.EYEBRELLAHAT = "- 降低隔热值。\n- 无法缝补，但可以修复。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.SNOWSTORMS then
+if UM_CONFIG and UM_CONFIG.SNOWSTORMS then
     TOOLTIPS.CAMPFIRE = "- 抵御暴风雪。"
     TOOLTIPS.TORCH = "- 抵御暴风雪。"
     TOOLTIPS.FIREPIT = "- 抵御暴风雪。"
@@ -287,7 +289,7 @@ else
     TOOLTIPS.MOLEHAT = "- 佩戴时可抵御沙尘暴和月亮风暴。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.HAYFEVER then
+if UM_CONFIG and UM_CONFIG.HAYFEVER then
     TOOLTIPS.GASMASK = TOOLTIPS.GASMASK .. "\n- 穿着时防止花粉症。"
     TOOLTIPS.PLAGUEMASK = TOOLTIPS.PLAGUEMASK .. "\n- 穿着时防止花粉症。"
     TOOLTIPS.BEEHAT = "- 蜇伤不会引起过敏反应。"
@@ -296,7 +298,7 @@ if TUNING.DSTU and TUNING.DSTU.HAYFEVER then
     TOOLTIPS.PERDFAN = "- 使用后大幅延缓花粉症导致的打喷嚏。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.SMOG then
+if UM_CONFIG and UM_CONFIG.SMOG then
     TOOLTIPS.UM_HAT_NETTLEMASK = TOOLTIPS.UM_HAT_NETTLEMASK .. "\n- 穿着时可抵御浓烟。"
     TOOLTIPS.GASMASK = TOOLTIPS.GASMASK .. "\n- 穿着时可抵御浓烟。"
     TOOLTIPS.PLAGUEMASK = TOOLTIPS.PLAGUEMASK .. "\n- 穿着时可抵御浓烟。"
@@ -320,15 +322,15 @@ if TUNING.DSTU and TUNING.DSTU.SMOG then
     end
 end
 
-if TUNING.DSTU and TUNING.DSTU.HEATWAVES then
+if UM_CONFIG and UM_CONFIG.HEATWAVES then
     TOOLTIPS.WINTEROMETER = "- 预测热浪来袭时间。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.STORMS then
+if UM_CONFIG and UM_CONFIG.STORMS then
     TOOLTIPS.RAINOMETER = "- 追踪龙卷风的位置。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.GOTOBED ~= false then
+if UM_CONFIG and UM_CONFIG.GOTOBED ~= false then
     TOOLTIPS.BEDROLL_STRAW = "- 如果伤的不重，可以恢复生命值上限。"
 
     TOOLTIPS.BEDROLL_FURRY = "- 效率提高了一点。\n- 如果伤的不重，可恢复生命值上限。"
@@ -339,7 +341,7 @@ if TUNING.DSTU and TUNING.DSTU.GOTOBED ~= false then
 
     TOOLTIPS.SIESTAHUT = "- 效率略低。\n- 如果伤的不重，可以恢复生命值上限。"
     
-elseif TUNING.DSTU.GOTOBED == "legacy" then
+elseif UM_CONFIG.GOTOBED == "legacy" then
 
     TOOLTIPS.BEDROLL_STRAW = "- 可恢复生命值上限。"
 
@@ -352,8 +354,8 @@ elseif TUNING.DSTU.GOTOBED == "legacy" then
     TOOLTIPS.SIESTAHUT = "- 效率略低。\n- 可恢复生命值上限。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.SLEEPINGBUFF > 1 then
-    if TUNING.DSTU and TUNING.DSTU.GOTOBED then
+if UM_CONFIG and UM_CONFIG.SLEEPINGBUFF > 1 then
+    if UM_CONFIG and UM_CONFIG.GOTOBED then
         TOOLTIPS.BEDROLL_STRAW = TOOLTIPS.BEDROLL_STRAW .. "\n- 更快的恢复速度。"
 
         TOOLTIPS.BEDROLL_FURRY = TOOLTIPS.BEDROLL_FURRY .. "\n- 更快的恢复速度。"
@@ -376,7 +378,7 @@ if TUNING.DSTU and TUNING.DSTU.SLEEPINGBUFF > 1 then
     end
 end
 
-if TUNING.DSTU and TUNING.DSTU.POCKET_POWERTRIP ~= 0 then
+if UM_CONFIG and UM_CONFIG.POCKET_POWERTRIP ~= 0 then
     TOOLTIPS.TRUNKVEST_SUMMER = "- 现在有格子了！\n- 略微增加了防水值。"
     TOOLTIPS.TRUNKVEST_WINTER = "- 现在有格子了！"
     TOOLTIPS.REFLECTIVEVEST = "- 现在有格子了！"
@@ -389,36 +391,36 @@ if TUNING.DSTU and TUNING.DSTU.POCKET_POWERTRIP ~= 0 then
     TOOLTIPS.TARSUIT = "- 现在有格子了！"
 end
 
-if TUNING.DSTU and TUNING.DSTU.CANEDURABILITY then
+if UM_CONFIG and UM_CONFIG.CANEDURABILITY then
     TOOLTIPS.CANE = "- 现在有耐久值了，但仅在行走时减少耐久。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.WANDA_NERF then
+if UM_CONFIG and UM_CONFIG.WANDA_NERF then
     TOOLTIPS.POCKETWATCH_REVIVE = "- 延长冷却时间。\n- 复活的玩家会损失生命值上限。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.INSUL_THERMALSTONE then
+if UM_CONFIG and UM_CONFIG.INSUL_THERMALSTONE then
     TOOLTIPS.HEATROCK = "- 降低保温效果。\n- 继承玩家衣服的一部分隔热值和保暖值。"
 end
 
--- if TUNING.DSTU and TUNING.DSTU.WICKERNERF_TENTACLES then
+-- if UM_CONFIG and UM_CONFIG.WICKERNERF_TENTACLES then
 --     TOOLTIPS.BOOK_TENTACLES =
 --     "- 召唤多病触手。\n- 多病触手会随时间凋零直至死亡，不会掉落任何物品，但不会攻击玩家。"
 -- end
 
-if TUNING.DSTU and TUNING.DSTU.WOODIE_WET_GOOSE then
+if UM_CONFIG and UM_CONFIG.WOODIE_WET_GOOSE then
     TOOLTIPS.WEREITEM_GOOSE = "- 在水上行走会让你湿透."
 end
 
-if TUNING.DSTU and TUNING.DSTU.WICKERNERF_MOONBOOK then
+if UM_CONFIG and UM_CONFIG.WICKERNERF_MOONBOOK then
     TOOLTIPS.BOOK_MOON = "- 阅读时将周围的物体全部变异。"
 end
 
---if TUNING.DSTU.WICKERNERF_BEEBOOK then
+--if UM_CONFIG.WICKERNERF_BEEBOOK then
     --TOOLTIPS.BOOK_BEES = "- Now adds Honey to 10 nearby Bee Boxes.\n- Doesn't work during Dusk, Night and/or Winter."
 --end
 
-if TUNING.DSTU and TUNING.DSTU.WATHGRITHR_REWORK then
+if UM_CONFIG and UM_CONFIG.WATHGRITHR_REWORK then
     TOOLTIPS.SPEAR_WATHGRITHR_LIGHTNING = "- 雷击或在发电机充电时恢复耐久。"
     TOOLTIPS.WATHGRITHR_SHIELD = "- 格挡攻击时，耐久消耗为受到伤害的10%。\n - 格挡失败时的时间惩罚减半。\n -格挡持续时间已成为物品的默认属性。"
     TOOLTIPS.WATHGRITHR_SHIELD_DREADSTONE = "- 恐吓攻击者。\n - 效果可以和绝望石盔甲叠加。"
@@ -426,30 +428,30 @@ if TUNING.DSTU and TUNING.DSTU.WATHGRITHR_REWORK then
     TOOLTIPS.BATTLESONG_DURABILITY = "- 现在对盾牌也有效。"
 end
 
-if TUNING.DSTU and TUNING.DSTU.DISABLE_MEGAFLARE then
+if UM_CONFIG and UM_CONFIG.DISABLE_MEGAFLARE then
     TOOLTIPS.MEGAFLARE = "- 不再召唤巨鹿。"
 end
 
 
-if TUNING.DSTU and TUNING.DSTU.STORMS then
+if UM_CONFIG and UM_CONFIG.STORMS then
     TOOLTIPS.BOOK_RAIN = "- 在施法范围内可以短暂地改变巨型龙卷风的方向。"
     TOOLTIPS.STAFF_TORNADO = "- 可以短暂地改变巨型龙卷风的方向。"
 end
 
-if TUNING.DSTU.SHAVE_MODE then
+if UM_CONFIG.SHAVE_MODE then
     TOOLTIPS.UM_THULECITE_RAZOR = "- Can occasionally give an extra resouce."
 end
 
-if TUNING.DSTU and TUNING.DSTU.WARLY_CHANGES == 1 then
+if UM_CONFIG and UM_CONFIG.WARLY_CHANGES == 1 then
     TOOLTIPS.SPICEPACK = "- 不再是背包。\n- 只能存放食材和有新鲜度的物品。"
 end
 
-if TUNING.DSTU.WARLY_CHANGES ~= 0 then
+if UM_CONFIG.WARLY_CHANGES ~= 0 then
 	TOOLTIPS.SPICE_SALT = "- 让料理能恢复生命值上限。"
 	TOOLTIPS.PORTABLECOOKPOT_ITEM = "- 其他幸存者现在也可以使用它。"	
 end
 
-if TUNING.DSTU.WXLESS then
+if UM_CONFIG.WXLESS then
     local CircuitDefs = {
         HEAT = "- 现在在工作或攻击时提升体温。\n- 不再改变体温的上下限。\n- 提供隔热值。\n- 体温越高，工作效率越高。",
     MOVESPEED = "- 跑得越久，跑步速度就会越高。",
